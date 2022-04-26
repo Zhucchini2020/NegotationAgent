@@ -1,0 +1,4 @@
+[console_scripts]
+negmas = negmas.scripts.app:cli
+negui = negmas.gui.app:cli
+
