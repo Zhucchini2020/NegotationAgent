@@ -21,7 +21,6 @@ from negmas import Outcome
 from negmas import ResponseType
 import numpy as np
 from scml.oneshot import *
-from sklearn.tree import export_graphviz
 
 from print_helpers import *
 from tier1_agent import LearningAgent, SimpleAgent
@@ -31,13 +30,11 @@ warnings.simplefilter("ignore")
 learning_rate = 0.05
 discount_factor = 0.90
 exploration_rate = 0.05
-num_states = 2*(10**2)
-# states: buy/sell, exogenous price percentile, exogenous quant percentile, 
-# oppent price percentile, quant percentile,time (5 each)
-num_actions = 2
-#qTable = np.random.rand(num_states, num_actions)
-qTable = np.loadtxt("qtable.txt")
-trainingMode = False
+num_states = 5
+num_actions = 4
+qTable = np.random.rand(num_states, num_actions)
+trainingMode = True
+turnToInitiate = 1
 
 # qTable = np.array([[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]])
 # TODO: Change the class name to something unique. This will be the name of your agent.
@@ -65,7 +62,7 @@ class Primo(OneShotAgent):
         self.mostRecentState = -1
         self.mostRecentUtility = -1
         self.mostRecentAction = -1
-        #print(f"Agent {self.name} of type Primo initiated")
+        self.turnToInitiate = turnToInitiate
 
     def before_step(self):
         """
@@ -83,8 +80,6 @@ class Primo(OneShotAgent):
         self.action = -1
         self.opp_min_price = -1
         self.opp_max_price = -1
-        self.currStates = []
-        self.currResponses = []
 
     def propose(self, negotiator_id: str, state: MechanismState) -> "Outcome":
         """
@@ -97,6 +92,7 @@ class Primo(OneShotAgent):
         Returns:
             an outcome to offer.
         """
+        print(f"Agent {self.name} is proposing, step {state.step}")
         my_needs = self._needed(negotiator_id)
         if my_needs <= 0:
             return None
@@ -107,17 +103,55 @@ class Primo(OneShotAgent):
         quantity_issue = ami.issues[QUANTITY]
         unit_price_issue = ami.issues[UNIT_PRICE]
         offer = [-1] * 3
-        # Begin training/data-gathering period
-        offer[QUANTITY] = max(
-            min(my_needs, quantity_issue.max_value),
-            quantity_issue.min_value)
-        offer[TIME] = self.awi.current_step
-        if self._is_selling(ami):
-            offer[UNIT_PRICE] = unit_price_issue.max_value
+        if state.step <= self.turnToInitiate:
+            # Begin training/data-gathering period
+            offer[QUANTITY] = max(
+                min(my_needs, self._opp_min_amt_needed),
+                quantity_issue.min_value)
+            offer[TIME] = self.awi.current_step
+            if self._is_selling(ami):
+                offer[UNIT_PRICE] = unit_price_issue.max_value
+            else:
+                offer[UNIT_PRICE] = unit_price_issue.min_value
+            print(f"Because the step {state.step} is below {(3*ami.n_steps//4)}, propose a terrible price.")
+            return tuple(offer)
         else:
-            offer[UNIT_PRICE] = unit_price_issue.min_value
-        return tuple(offer)    
-        
+            idle_util = self.ufun.from_contracts([])
+            print(f"Because the step {state.step} is at or above {(3*ami.n_steps//4)}, propose the following.")
+            offer[QUANTITY] = max(
+                min(my_needs, self._opp_min_amt_needed),
+                quantity_issue.min_value)
+            if self.action == 0:
+                print(f"Action 0: Continue offering the same price")
+                offer[TIME] = self.awi.current_step
+                if self._is_selling(ami):
+                    offer[UNIT_PRICE] = unit_price_issue.max_value
+                else:
+                    offer[UNIT_PRICE] = unit_price_issue.min_value
+                return tuple(offer)
+            elif self.action == 1:
+                offer[UNIT_PRICE] = self._find_good_price(ami, state, 0.2)
+                print(f"Action 1: Offer price {offer[UNIT_PRICE]}")
+                return tuple(offer)
+            elif self.action == 2:
+                offer[UNIT_PRICE] = self._find_good_price(ami, state, 1)
+                print(f"Action 2: Offer price {offer[UNIT_PRICE]}")
+                return tuple(offer)
+            elif self.action == 3:
+                offer[UNIT_PRICE] = self._find_good_price(ami, state, 5)
+                print(f"Action 3: Offer price {offer[UNIT_PRICE]}")
+                return tuple(offer)
+        '''Old propose code:
+        decay = self.ufun.find_limit(True).utility*3 #(1-state.relative_time)**0.5
+        u = max(self.ufun.reserved_value, decay)
+        ret_offer = self._best_so_far
+        if ret_offer:
+            if self._is_selling:
+                ret_offer = (ret_offer[0], ret_offer[1], 1000000000)# ret_offer[2] + 1)
+            else:
+                ret_offer = (ret_offer[0], ret_offer[1], 0)# ret_offer[2] - 1)
+        return self._best_so_far #if u < self._max_received else self._inv.one_in((u, u + 0.1), True)
+        '''
     def respond(
         self, negotiator_id: str, state: MechanismState, offer: "Outcome"
     ) -> "ResponseType":
@@ -138,39 +172,80 @@ class Primo(OneShotAgent):
             proposed in the given state and reject otherwise
 
         """
-        
-        opp_q = offer[QUANTITY]
-        opp_p = offer[UNIT_PRICE]
-        selling = 0
         ami = self.get_nmi(negotiator_id)
-        mn = ami.issues[UNIT_PRICE].min_value
-        mx = ami.issues[UNIT_PRICE].max_value
-        ex_q = self.awi.current_exogenous_input_quantity + \
-               self.awi.current_exogenous_output_quantity
-        ex_p = self.awi.current_exogenous_input_price + \
-               self.awi.current_exogenous_output_price
-        if not ami:
-            return None
-        if self._is_selling(ami):
-            selling = 1
-        per_opp_q = self._percentile(mn,mx,opp_q)
-        per_opp_p = self._percentile(mn,mx,opp_p)
-        per_ex_q = self._percentile(mn,mx,ex_q)
-        per_ex_p = self._percentile(mn,mx,ex_p)
-        per_diff_p = per_opp_p-per_ex_p+5
-        per_diff_q = per_opp_q-per_ex_q+5
-        # time = self._percentile(0,ami.n_steps,state.step+1)
-        #curr_state = 5**4 *(selling) + 5**3 *(per_opp_q) + 5**2 *(per_opp_p) + \
-         #   5**1 *(per_ex_q) + 5**0 *(per_ex_p)
-        curr_state = 10**2 * (selling) + 10*per_diff_p + per_diff_q
-        self.currStates.append(curr_state)
-        response = self.chooseNextMove(curr_state)
-        self.currResponses.append(response)
-        if response == 0:
+        quantity_issue = ami.issues[QUANTITY]
+        unit_price_issue = ami.issues[UNIT_PRICE]
+        amt_offered = offer[QUANTITY]
+        self._opp_min_amt_needed = amt_offered
+        priceRange = unit_price_issue.max_value - unit_price_issue.min_value
+
+        if amt_offered > self._needed(negotiator_id):
+            return ResponseType.REJECT_OFFER
+
+        if state.step < 2:
+            # Begin training/data-gathering period
+            if self._is_selling(ami):
+                if offer[UNIT_PRICE] < unit_price_issue.max_value:
+                    return ResponseType.REJECT_OFFER
+            else:
+                if offer[UNIT_PRICE] > unit_price_issue.min_value:
+                    return ResponseType.REJECT_OFFER
+            return ResponseType.ACCEPT_OFFER
+        elif state.step == 2:
+            percentChanged = 0
+            if self._is_selling(ami): 
+                diffFromMin = offer[UNIT_PRICE] - unit_price_issue.min_value
+                percentChanged = 1 - diffFromMin/priceRange 
+                self.opp_min_price = offer[UNIT_PRICE]
+            else:
+                diffFromMax = offer[UNIT_PRICE] - unit_price_issue.min_value
+                percentChanged = 1 - diffFromMax/priceRange
+                self.opp_max_price = offer[UNIT_PRICE]
+            currState = 0
+            if percentChanged >= 0.99:
+                currState = 0
+            elif percentChanged >= 0.97:
+                currState = 1
+            elif percentChanged >= 0.95: 
+                currState = 2
+            elif percentChanged >= 0.90: 
+                currState = 3
+            else:
+                currState = 4
+            self.action = self.chooseNextMove(currState)
+            if self.mostRecentState != -1 and self.mostRecentUtility != -1 and self.mostRecentAction != -1:
+              
+                self.updateRule(self.mostRecentAction, self.mostRecentState, currState, self.mostRecentUtility)
+            self.mostRecentState = currState
+            self.mostRecentAction = self.action
             return ResponseType.REJECT_OFFER
         else:
-            return ResponseType.ACCEPT_OFFER
-        
+            idle_util = self.ufun.from_contracts(self.contracts)
+            if self.action == 0:
+                if state.step == ami.n_steps-1:
+                    if self.ufun.from_offers(tuple([offer]), tuple([self._is_selling(ami)])) > idle_util:
+                        print("accepted final offer")
+                        return ResponseType.ACCEPT_OFFER
+                    else:
+                        print("rejected final offer")
+                        return ResponseType.REJECT_OFFER
+                else:
+                    return ResponseType.REJECT_OFFER
+            elif self.action == 1:
+                if self._is_good_price(ami, state, offer[UNIT_PRICE],0.2):
+                    return ResponseType.ACCEPT_OFFER
+                else:
+                    return ResponseType.REJECT_OFFER
+            elif self.action == 2:
+                if self._is_good_price(ami, state, offer[UNIT_PRICE],1):
+                    return ResponseType.ACCEPT_OFFER
+                else:
+                    return ResponseType.REJECT_OFFER
+            elif self.action == 3:
+                if self._is_good_price(ami, state, offer[UNIT_PRICE],5):
+                    return ResponseType.ACCEPT_OFFER
+                else:
+                    return ResponseType.REJECT_OFFER
 
     def on_negotiation_failure(
         self,
@@ -192,6 +267,7 @@ class Primo(OneShotAgent):
                    including the agreement if any.
         """
         # TODO
+        print(f"Agent {self.name} failed to secure, trying action {self.action} up to step {state.step}")
 
     def on_negotiation_success(
         self, contract: Contract, mechanism: NegotiatorMechanismInterface
@@ -226,26 +302,18 @@ class Primo(OneShotAgent):
         print(f"Shortfall penalty was {self.ufun.shortfall_penalty} and disposal cost was {self.ufun.disposal_cost}")
         print(f"Max possible utility was {self.ufun.max_utility} and min possible utility was {self.ufun.min_utility}")
         print(f"Utility of literally doing nothing would have been {self.ufun.from_contracts([])}")
+        
+        idleValue = self.ufun.from_contracts([])
+        self.mostRecentUtility = self.ufun.from_contracts(self.contracts) - idleValue
+        if len(self.contracts) == 0:
+            print("No new contracts today")
+        print(f"Tried action {self.action} today.")
+        print(f"New Q Table for {self.name} is {self.qTable}")
         '''
-        util= self.ufun.from_contracts(self.contracts)
-        for i in range(len(self.currStates)):
-            self.updateRule(self.currResponses[i], self.currStates[i], util)
-        fileName = "qtable.txt"
+        fileName = "qtab.txt"
         np.savetxt(fileName, self.qTable)
-        #print(f"Agent {self.name} saved to the file.")
 
-    def _percentile(self, min, max, num):
-        percent = (num-min)/(max-min)
-        if percent > 0.8:
-            return 4
-        elif percent > 0.6:
-            return 3
-        elif percent > 0.4:
-            return 2
-        elif percent > 0.2: 
-            return 1
-        else:
-            return 0
+
 
         
     def _is_selling(self, ami):
@@ -256,16 +324,14 @@ class Primo(OneShotAgent):
                self.awi.current_exogenous_output_quantity - \
                self.secured
 
-    def updateRule(self, action, state, utility):
-        self.qTable[state][action] += self.learning_rate*(utility - self.qTable[state][action])
+    def updateRule(self, action, state, destState, reward):
+        utility = self.ufun.from_contracts(self.contracts)
+        maxDestState = np.max(self.qTable[destState])
+        self.qTable[state][action] += self.learning_rate*(utility + self.discount_factor * maxDestState - self.qTable[state][action])
     
     def chooseNextMove(self, destState):
         if self.trainingMode:
-            if np.random.rand() < self.exploration_rate:
-                return np.random.randint(0,self.num_actions)
-            else:
-                bestMove = np.argmax(self.qTable[destState])
-                return bestMove
+            return np.random.randint(0,4)
         else:
             bestMove = np.argmax(self.qTable[destState])
             return bestMove
@@ -273,7 +339,7 @@ class Primo(OneShotAgent):
     def _find_good_price(self, ami, state, conc_exp):
         """Finds a good-enough price conceding linearly over time"""
         mn, mx = self._price_range(ami)
-        th = self._th(state.step - (3*ami.n_steps//4), ami.n_steps - (3*ami.n_steps//4), conc_exp)
+        th = self._th(state.step - self.turnToInitiate, ami.n_steps - self.turnToInitiate, conc_exp)
         # offer a price that is around th of your best possible price
         if self._is_selling(ami):
             return mn + th * (mx - mn)
@@ -283,7 +349,7 @@ class Primo(OneShotAgent):
     def _is_good_price(self, ami, state, price, conc_exp):
         """Checks if a given price is good enough at this stage"""
         mn, mx = self._price_range(ami)
-        th = self._th(state.step - (3*ami.n_steps//4), ami.n_steps - (3*ami.n_steps//4), conc_exp)
+        th = self._th(state.step - self.turnToInitiate, ami.n_steps - self.turnToInitiate, conc_exp)
         # a good price is one better than the threshold
         if self._is_selling(ami):
             return (price - mn) >= th * (mx - mn)
@@ -307,6 +373,8 @@ class Primo(OneShotAgent):
     def _th(self, step, n_steps, conc_exp):
         """calculates a descending threshold (0 <= th <= 1)"""
         return ((n_steps - step - 1.0) / (n_steps - 1.0)) ** conc_exp
+
+
 
 def main():
     """
