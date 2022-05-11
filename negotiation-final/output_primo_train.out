@@ -1,0 +1,2009 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 5084006
+##  Job Name : PrimoBot_train
+##  Nodelist : node1123
+##      CPUs : 
+##  Mem/Node : 51200 MB
+## Directory : /gpfs/data/epavlick/etan13/NegotationAgent/negotiation-final
+##   Started : Tue May 10 11:42:17 EDT 2022
+###############################################################################
+Scores: 
+[('LearningAgent', 0.985795936008617), ('Primo', 0.7078698717599826)]
+Scores: 
+[('LearningAgent', 1.0779366051026253), ('Primo', 0.5079396049355214)]
+Scores: 
+[('LearningAgent', 1.258098938448446), ('Primo', 0.7226394275822098)]
+Scores: 
+[('LearningAgent', 0.8860425857082586), ('Primo', 0.7284046154891992)]
+Scores: 
+[('LearningAgent', 0.9667129135303444), ('Primo', 0.7426542059167507)]
+Scores: 
+[('LearningAgent', 1.0492422059881774), ('Primo', 0.7231706763619614)]
+Scores: 
+[('Primo', 0.8094026476462777), ('LearningAgent', 0.7771397564906325)]
+Scores: 
+[('LearningAgent', 1.0565816169937152), ('Primo', 0.5716410690956654)]
+Scores: 
+[('LearningAgent', 0.8280548030582325), ('Primo', 0.5426103078501748)]
+Scores: 
+[('LearningAgent', 1.013041483236892), ('Primo', 0.6752162287726069)]
+Scores: 
+[('LearningAgent', 1.0105700615596476), ('Primo', 0.5343815955875332)]
+Scores: 
+[('LearningAgent', 0.9870258124671486), ('Primo', 0.5115374387530646)]
+Scores: 
+[('LearningAgent', 0.9440399207445608), ('Primo', 0.6628353027454797)]
+Scores: 
+[('LearningAgent', 0.9051764123352681), ('Primo', 0.7284178870105577)]
+Scores: 
+[('LearningAgent', 0.8500243201627115), ('Primo', 0.5322724732981345)]
+Scores: 
+[('LearningAgent', 1.0950440234284708), ('Primo', 0.6605584915282805)]
+Scores: 
+[('LearningAgent', 0.9744874237599324), ('Primo', 0.7643486425897152)]
+Scores: 
+[('LearningAgent', 1.1267520210443802), ('Primo', 0.7051133986022171)]
+Scores: 
+[('LearningAgent', 0.8627703337632605), ('Primo', 0.694984313114215)]
+Scores: 
+[('LearningAgent', 0.9321472959555465), ('Primo', 0.5584293363486208)]
+Scores: 
+[('LearningAgent', 0.9901207810678475), ('Primo', 0.701639036162666)]
+Scores: 
+[('LearningAgent', 1.1780514125429253), ('Primo', 0.7010665893993365)]
+Scores: 
+[('Primo', 0.7222662566640202), ('LearningAgent', 0.5348978931919732)]
+Scores: 
+[('LearningAgent', 1.1645432674418876), ('Primo', 0.6903841139235519)]
+Scores: 
+[('LearningAgent', 1.0276990288255445), ('Primo', 0.7358779704548432)]
+Scores: 
+[('LearningAgent', 0.7402331551284258), ('Primo', 0.5457117734285812)]
+Scores: 
+[('LearningAgent', 1.0437759896259071), ('Primo', 0.7503329516656996)]
+Scores: 
+[('LearningAgent', 0.9226699764736253), ('Primo', 0.6754261699460894)]
+Scores: 
+[('LearningAgent', 0.8264871296334548), ('Primo', 0.7513601117493848)]
+Scores: 
+[('LearningAgent', 1.132474552179194), ('Primo', 0.6792392922055562)]
+Scores: 
+[('LearningAgent', 0.8921091816905756), ('Primo', 0.7993294774179843)]
+Scores: 
+[('LearningAgent', 0.9564055815170228), ('Primo', 0.6101215509109935)]
+Scores: 
+[('LearningAgent', 0.948066282269761), ('Primo', 0.7251695432523196)]
+Scores: 
+[('LearningAgent', 1.117948828380863), ('Primo', 0.44343348910458474)]
+Scores: 
+[('LearningAgent', 1.1473964675563746), ('Primo', 0.6375846875626524)]
+Scores: 
+[('LearningAgent', 0.82921074026219), ('Primo', 0.6584037439143758)]
+Scores: 
+[('LearningAgent', 0.9245868325987718), ('Primo', 0.7683689167998184)]
+Scores: 
+[('LearningAgent', 1.2250672492367338), ('Primo', 0.662626536485246)]
+Scores: 
+[('LearningAgent', 1.0909095924461922), ('Primo', 0.6236603762458731)]
+Scores: 
+[('LearningAgent', 0.8373877271458957), ('Primo', 0.681453219817628)]
+Scores: 
+[('LearningAgent', 1.0640569465430982), ('Primo', 0.6657296556282354)]
+Scores: 
+[('LearningAgent', 1.0831017255187545), ('Primo', 0.7057342164706875)]
+Scores: 
+[('Primo', 0.7152305920669505), ('LearningAgent', 0.6796355223757325)]
+Scores: 
+[('LearningAgent', 0.9210016056500614), ('Primo', 0.5187198454525574)]
+Scores: 
+[('LearningAgent', 1.1350261693631505), ('Primo', 0.7954352891383328)]
+Scores: 
+[('LearningAgent', 1.1298260032876906), ('Primo', 0.5189266908419364)]
+Scores: 
+[('LearningAgent', 0.8121061876003148), ('Primo', 0.6759540750928767)]
+Scores: 
+[('LearningAgent', 0.9021416357681776), ('Primo', 0.6533561303496448)]
+Scores: 
+[('LearningAgent', 1.045607570172179), ('Primo', 0.7000933919279786)]
+Scores: 
+[('LearningAgent', 0.7935599576885234), ('Primo', 0.6371112710618488)]
+Scores: 
+[('LearningAgent', 0.9993794153308987), ('Primo', 0.655018197403501)]
+Scores: 
+[('LearningAgent', 0.8490910070419222), ('Primo', 0.7980232322513104)]
+Scores: 
+[('LearningAgent', 1.0755416111071239), ('Primo', 0.584518781129897)]
+Scores: 
+[('LearningAgent', 0.7670576066619461), ('Primo', 0.6994053191777168)]
+Scores: 
+[('LearningAgent', 1.1628027107860466), ('Primo', 0.7192442583208566)]
+Scores: 
+[('LearningAgent', 0.7578151430523494), ('Primo', 0.7001769275700341)]
+Scores: 
+[('LearningAgent', 1.2203035211734083), ('Primo', 0.6470270140941532)]
+Scores: 
+[('Primo', 0.769398970591911), ('LearningAgent', 0.7554082730344995)]
+Scores: 
+[('LearningAgent', 0.9371692045315206), ('Primo', 0.7402528877468247)]
+Scores: 
+[('LearningAgent', 1.0098325372678945), ('Primo', 0.7011290692975142)]
+Scores: 
+[('LearningAgent', 0.86156552880731), ('Primo', 0.7676535325255348)]
+Scores: 
+[('LearningAgent', 0.9562151203605994), ('Primo', 0.7031221279328225)]
+Scores: 
+[('Primo', 0.6768298124317945), ('LearningAgent', 0.543269523076799)]
+Scores: 
+[('LearningAgent', 1.0933367654060233), ('Primo', 0.6828137488678427)]
+Scores: 
+[('LearningAgent', 0.8375879397256988), ('Primo', 0.744344784754381)]
+Scores: 
+[('LearningAgent', 0.9219468927822828), ('Primo', 0.6870603914864518)]
+Scores: 
+[('LearningAgent', 0.9329756720759941), ('Primo', 0.7656308142800137)]
+Scores: 
+[('LearningAgent', 1.294544782263718), ('Primo', 0.5354885110657456)]
+Scores: 
+[('LearningAgent', 1.204202288059025), ('Primo', 0.5785000610037695)]
+Scores: 
+[('Primo', 0.6953597764230637), ('LearningAgent', 0.5721504899810346)]
+Scores: 
+[('LearningAgent', 1.0650667248154504), ('Primo', 0.7043854340871807)]
+Scores: 
+[('LearningAgent', 0.9492111695970367), ('Primo', 0.602551444798166)]
+Scores: 
+[('LearningAgent', 1.060665552121515), ('Primo', 0.7291592738629603)]
+Scores: 
+[('LearningAgent', 1.0464611170519602), ('Primo', 0.7869458425622593)]
+Scores: 
+[('LearningAgent', 0.8461233998928439), ('Primo', 0.7389284328900496)]
+Scores: 
+[('LearningAgent', 1.2701059840557591), ('Primo', 0.7143241759611879)]
+Scores: 
+[('LearningAgent', 0.8124931448456599), ('Primo', 0.7511121943005927)]
+Scores: 
+[('LearningAgent', 0.8964583971567616), ('Primo', 0.6186606812777092)]
+Scores: 
+[('LearningAgent', 0.7624570524394245), ('Primo', 0.7101317008926658)]
+Scores: 
+[('Primo', 0.7140459224503547), ('LearningAgent', 0.6335317370604729)]
+Scores: 
+[('LearningAgent', 1.1577624847936905), ('Primo', 0.746465625017383)]
+Scores: 
+[('LearningAgent', 1.0785443736553157), ('Primo', 0.6830859075860132)]
+Scores: 
+[('LearningAgent', 0.8165659050965596), ('Primo', 0.6368059622120514)]
+Scores: 
+[('LearningAgent', 1.178219328269075), ('Primo', 0.7116089434534074)]
+Scores: 
+[('LearningAgent', 0.8003358980240312), ('Primo', 0.6167681146121595)]
+Scores: 
+[('LearningAgent', 1.0504551108816702), ('Primo', 0.6845579641355153)]
+Scores: 
+[('LearningAgent', 0.8229770399531987), ('Primo', 0.6661627254379076)]
+Scores: 
+[('LearningAgent', 1.0386723474831887), ('Primo', 0.6020851755237765)]
+Scores: 
+[('LearningAgent', 1.3717277486910995), ('Primo', 0.6298512393892949)]
+Scores: 
+[('LearningAgent', 0.8397554656407564), ('Primo', 0.7607028630233915)]
+Scores: 
+[('LearningAgent', 1.0922874861230443), ('Primo', 0.5231891316997587)]
+Scores: 
+[('LearningAgent', 0.8752255981258161), ('Primo', 0.5952241687222691)]
+Scores: 
+[('LearningAgent', 1.1180383206644342), ('Primo', 0.6296631508904135)]
+Scores: 
+[('LearningAgent', 1.0295136038711683), ('Primo', 0.7270232460993346)]
+Scores: 
+[('LearningAgent', 1.0900984909091385), ('Primo', 0.6020143282475868)]
+Scores: 
+[('LearningAgent', 0.9166360023570057), ('Primo', 0.7058001801087016)]
+Scores: 
+[('LearningAgent', 0.8582836155064744), ('Primo', 0.7773864591500225)]
+Scores: 
+[('LearningAgent', 1.0992284863702495), ('Primo', 0.6504999999375283)]
+Scores: 
+[('LearningAgent', 0.9332388157123128), ('Primo', 0.7114342389469359)]
+Scores: 
+[('LearningAgent', 0.853945851457263), ('Primo', 0.7265627116319956)]
+Scores: 
+[('LearningAgent', 1.1058767174188435), ('Primo', 0.6176889610592979)]
+Scores: 
+[('LearningAgent', 0.8670973845065292), ('Primo', 0.7314040858142917)]
+Scores: 
+[('Primo', 0.7105415158082692), ('LearningAgent', 0.710119734317405)]
+Scores: 
+[('LearningAgent', 1.0001660694202228), ('Primo', 0.5482928929618831)]
+Scores: 
+[('LearningAgent', 0.9980075757574715), ('Primo', 0.6905098715197737)]
+Scores: 
+[('LearningAgent', 1.0502385232367575), ('Primo', 0.6829272891808339)]
+Scores: 
+[('LearningAgent', 0.7208975443967143), ('Primo', 0.6768720773027913)]
+Scores: 
+[('LearningAgent', 0.8660341653750373), ('Primo', 0.7561160232051406)]
+Scores: 
+[('LearningAgent', 0.9863578547957316), ('Primo', 0.5155191889283665)]
+Scores: 
+[('LearningAgent', 0.8771935324622081), ('Primo', 0.652749423581305)]
+Scores: 
+[('LearningAgent', 1.1082621592726505), ('Primo', 0.72987064557682)]
+Scores: 
+[('LearningAgent', 1.1903945351795768), ('Primo', 0.5221567432778055)]
+Scores: 
+[('LearningAgent', 1.1171041133089878), ('Primo', 0.6360071942350947)]
+Scores: 
+[('LearningAgent', 1.0556004051585652), ('Primo', 0.6563025087348544)]
+Scores: 
+[('LearningAgent', 0.8080145534481286), ('Primo', 0.7307855077075887)]
+Scores: 
+[('LearningAgent', 0.903779594865874), ('Primo', 0.7279712141113706)]
+Scores: 
+[('LearningAgent', 0.9441082129312669), ('Primo', 0.7395976196902113)]
+Scores: 
+[('LearningAgent', 1.0987478911164625), ('Primo', 0.6396518653179671)]
+Scores: 
+[('Primo', 0.7790426195135783), ('LearningAgent', 0.7272278185751743)]
+Scores: 
+[('LearningAgent', 1.1005612295696583), ('Primo', 0.602949899370373)]
+Scores: 
+[('LearningAgent', 1.1000350304532402), ('Primo', 0.5625416658283364)]
+Scores: 
+[('LearningAgent', 0.9839111797612271), ('Primo', 0.7498165998126115)]
+Scores: 
+[('LearningAgent', 1.0369635053994606), ('Primo', 0.7866710433470281)]
+Scores: 
+[('LearningAgent', 1.1507893261116973), ('Primo', 0.6092843700932389)]
+Scores: 
+[('LearningAgent', 1.0976304934304957), ('Primo', 0.6839093669328078)]
+Scores: 
+[('LearningAgent', 1.1505843981254698), ('Primo', 0.5698437689350644)]
+Scores: 
+[('LearningAgent', 0.8955050644585117), ('Primo', 0.5961098441592516)]
+Scores: 
+[('LearningAgent', 1.0517973958165705), ('Primo', 0.690375277629042)]
+Scores: 
+[('LearningAgent', 0.8375868634684185), ('Primo', 0.46476331829518003)]
+Scores: 
+[('LearningAgent', 0.7825156944511785), ('Primo', 0.7570227232576583)]
+Scores: 
+[('LearningAgent', 1.0332321236229387), ('Primo', 0.4595000428080046)]
+Scores: 
+[('LearningAgent', 1.1403550190158227), ('Primo', 0.681961401199933)]
+Scores: 
+[('LearningAgent', 0.8295568876723077), ('Primo', 0.6729432736933798)]
+Scores: 
+[('LearningAgent', 1.1364525754632782), ('Primo', 0.7118762457020096)]
+Scores: 
+[('LearningAgent', 1.2575162282200205), ('Primo', 0.7452497753222163)]
+Scores: 
+[('LearningAgent', 1.0321184894060353), ('Primo', 0.5995377990978501)]
+Scores: 
+[('LearningAgent', 1.00848542119081), ('Primo', 0.6850972634645244)]
+Scores: 
+[('LearningAgent', 0.9187819518664717), ('Primo', 0.5724889101251901)]
+Scores: 
+[('LearningAgent', 0.7923950306405484), ('Primo', 0.6784089363473582)]
+Scores: 
+[('LearningAgent', 1.1227815418208023), ('Primo', 0.7393383660240467)]
+Scores: 
+[('LearningAgent', 0.892848648985515), ('Primo', 0.7414145331914295)]
+Scores: 
+[('LearningAgent', 0.877439497105824), ('Primo', 0.6080737657148727)]
+Scores: 
+[('LearningAgent', 0.9465610264414396), ('Primo', 0.7134334368852744)]
+Scores: 
+[('LearningAgent', 0.9488703088017032), ('Primo', 0.6573639115295382)]
+Scores: 
+[('LearningAgent', 1.1488276021646937), ('Primo', 0.670216799588839)]
+Scores: 
+[('LearningAgent', 1.0561021917263549), ('Primo', 0.6903661105948942)]
+Scores: 
+[('LearningAgent', 0.8985746021864305), ('Primo', 0.5650794806799257)]
+Scores: 
+[('LearningAgent', 0.9948345706323755), ('Primo', 0.6121460587719724)]
+Scores: 
+[('LearningAgent', 1.0183323369086272), ('Primo', 0.6160972165804014)]
+Scores: 
+[('LearningAgent', 1.0318703377670722), ('Primo', 0.7263492601508934)]
+Scores: 
+[('LearningAgent', 1.1605250214459173), ('Primo', 0.6607866577688383)]
+Scores: 
+[('LearningAgent', 1.1915614500043132), ('Primo', 0.6174459244355182)]
+Scores: 
+[('LearningAgent', 1.1642567984650019), ('Primo', 0.5473748771352661)]
+Scores: 
+[('LearningAgent', 1.0776269874669615), ('Primo', 0.5530590911470252)]
+Scores: 
+[('LearningAgent', 0.8683883221458426), ('Primo', 0.7132248234727787)]
+Scores: 
+[('LearningAgent', 1.0208679369055842), ('Primo', 0.7103885216391375)]
+Scores: 
+[('LearningAgent', 1.1220233556891428), ('Primo', 0.6953737339893911)]
+Scores: 
+[('Primo', 0.6195653012482688), ('LearningAgent', 0.6067462450009569)]
+Scores: 
+[('LearningAgent', 1.1916681062293446), ('Primo', 0.6721638745670928)]
+Scores: 
+[('LearningAgent', 0.7745523882599121), ('Primo', 0.6212557014155845)]
+Scores: 
+[('LearningAgent', 1.059388961736656), ('Primo', 0.6622111668414746)]
+Scores: 
+[('LearningAgent', 0.8501240959778624), ('Primo', 0.7189902070976896)]
+Scores: 
+[('LearningAgent', 1.0564886619851832), ('Primo', 0.6654471447024934)]
+Scores: 
+[('Primo', 0.7923115982298103), ('LearningAgent', 0.651121339472772)]
+Scores: 
+[('LearningAgent', 1.04718938711806), ('Primo', 0.6338678918680601)]
+Scores: 
+[('LearningAgent', 0.9733114318400141), ('Primo', 0.7546339935476526)]
+Scores: 
+[('LearningAgent', 0.9141093228145396), ('Primo', 0.7579627826772954)]
+Scores: 
+[('LearningAgent', 0.8721145490859777), ('Primo', 0.7336223141080674)]
+Scores: 
+[('LearningAgent', 0.8780147427548913), ('Primo', 0.6173929415210485)]
+Scores: 
+[('LearningAgent', 1.340401424409194), ('Primo', 0.5456769334543917)]
+Scores: 
+[('LearningAgent', 1.13769513182598), ('Primo', 0.7073543212197837)]
+Scores: 
+[('LearningAgent', 1.0781736966391369), ('Primo', 0.5436209636282462)]
+Scores: 
+[('LearningAgent', 0.8495794158853682), ('Primo', 0.6542542140090544)]
+Scores: 
+[('LearningAgent', 0.9218338014658359), ('Primo', 0.7379005577313292)]
+Scores: 
+[('LearningAgent', 1.0280148339010378), ('Primo', 0.6386094898187724)]
+Scores: 
+[('LearningAgent', 1.1932940276629949), ('Primo', 0.7223070652342147)]
+Scores: 
+[('LearningAgent', 1.0806424616778199), ('Primo', 0.5614513956572494)]
+Scores: 
+[('Primo', 0.7043549524532503)]
+Scores: 
+[('LearningAgent', 1.1281479407568242), ('Primo', 0.5820263457215975)]
+Scores: 
+[('LearningAgent', 1.0060971970284411), ('Primo', 0.5497201667295857)]
+Scores: 
+[('LearningAgent', 0.9548729701287728), ('Primo', 0.7253991259450793)]
+Scores: 
+[('LearningAgent', 1.0017758903481533), ('Primo', 0.6326674580903227)]
+Scores: 
+[('LearningAgent', 1.1996453199798303), ('Primo', 0.8126800826233785)]
+Scores: 
+[('Primo', 0.7377859635751726), ('LearningAgent', 0.6977199633872925)]
+Scores: 
+[('LearningAgent', 1.048394182499796), ('Primo', 0.7137276095134452)]
+Scores: 
+[('LearningAgent', 0.7474183725862173), ('Primo', 0.6645327016925023)]
+Scores: 
+[('LearningAgent', 0.9574156501762248), ('Primo', 0.7478485292489404)]
+Scores: 
+[('LearningAgent', 0.964362799750972), ('Primo', 0.6824319822812794)]
+Scores: 
+[('LearningAgent', 0.986545468705599), ('Primo', 0.6628318331686115)]
+Scores: 
+[('LearningAgent', 0.9804153418125798), ('Primo', 0.6942380165442348)]
+Scores: 
+[('LearningAgent', 0.8091556219050404), ('Primo', 0.7512773617638561)]
+Scores: 
+[('LearningAgent', 1.0598245905490506), ('Primo', 0.7133593353002494)]
+Scores: 
+[('LearningAgent', 1.1620221772904995), ('Primo', 0.643629688339977)]
+Scores: 
+[('LearningAgent', 1.023887249672619), ('Primo', 0.7139887503899813)]
+Scores: 
+[('LearningAgent', 0.9908943006283755), ('Primo', 0.767894713885238)]
+Scores: 
+[('LearningAgent', 1.0871185040109237), ('Primo', 0.7203396944959519)]
+Scores: 
+[('LearningAgent', 0.9990828469072475), ('Primo', 0.6632713631659787)]
+Scores: 
+[('LearningAgent', 1.0785265815328096), ('Primo', 0.6830693397261433)]
+Scores: 
+[('LearningAgent', 1.0343757400457176), ('Primo', 0.5755835885211836)]
+Scores: 
+[('LearningAgent', 0.9190790955057633), ('Primo', 0.7078897429859172)]
+Scores: 
+[('LearningAgent', 0.9952564806133913), ('Primo', 0.6804527385999147)]
+Scores: 
+[('LearningAgent', 1.0098724391023097), ('Primo', 0.611834086307931)]
+Scores: 
+[('LearningAgent', 1.0255013624931366), ('Primo', 0.6531027267755818)]
+Scores: 
+[('LearningAgent', 0.8058042827672224), ('Primo', 0.5952166761521938)]
+Scores: 
+[('LearningAgent', 0.9751716998575586), ('Primo', 0.7417157166863669)]
+Scores: 
+[('LearningAgent', 0.8062314239043047), ('Primo', 0.7431149264047596)]
+Scores: 
+[('LearningAgent', 1.1183627999844477), ('Primo', 0.5331404823761204)]
+Scores: 
+[('LearningAgent', 1.1469213464716876), ('Primo', 0.6610368334118994)]
+Scores: 
+[('LearningAgent', 1.3437695120863438), ('Primo', 0.7358135323299541)]
+Scores: 
+[('LearningAgent', 0.9094280115868058), ('Primo', 0.4246333169905745)]
+Scores: 
+[('LearningAgent', 0.8346576449919889), ('Primo', 0.7748599673887692)]
+Scores: 
+[('LearningAgent', 0.9460445238247066), ('Primo', 0.7708260301590014)]
+Scores: 
+[('LearningAgent', 0.7368473180354144), ('Primo', 0.7357504121098646)]
+Scores: 
+[('LearningAgent', 1.26194939081537), ('Primo', 0.6560518927515894)]
+Scores: 
+[('LearningAgent', 0.7121564780856524), ('Primo', 0.70014667440802)]
+Scores: 
+[('LearningAgent', 0.9693600121508441), ('Primo', 0.7993761369208462)]
+Scores: 
+[('LearningAgent', 0.9883638981955842), ('Primo', 0.7225524747380787)]
+Scores: 
+[('Primo', 0.6153601044646634), ('LearningAgent', 0.5402755763236201)]
+Scores: 
+[('LearningAgent', 1.0364668987041676), ('Primo', 0.6710910486813156)]
+Scores: 
+[('LearningAgent', 1.0065161800808857), ('Primo', 0.7504684128123144)]
+Scores: 
+[('LearningAgent', 1.038349880459275), ('Primo', 0.6480569209334235)]
+Scores: 
+[('LearningAgent', 1.0682614132557295), ('Primo', 0.7222981872366959)]
+Scores: 
+[('LearningAgent', 0.840934008546177), ('Primo', 0.6029508408445066)]
+Scores: 
+[('LearningAgent', 1.0961943784873525), ('Primo', 0.6219558718011167)]
+Scores: 
+[('LearningAgent', 1.2949669100247474), ('Primo', 0.5804273101132522)]
+Scores: 
+[('LearningAgent', 1.1618145190892022), ('Primo', 0.6856894383360513)]
+Scores: 
+[('LearningAgent', 0.6997273729759858), ('Primo', 0.5825599389548937)]
+Scores: 
+[('LearningAgent', 1.181135390219502), ('Primo', 0.7298341611936286)]
+Scores: 
+[('LearningAgent', 1.0288830353432925), ('Primo', 0.7892974068187775)]
+Scores: 
+[('LearningAgent', 0.7373048206985982), ('Primo', 0.733445816441994)]
+Scores: 
+[('LearningAgent', 1.0178800168331206), ('Primo', 0.6821081549518322)]
+Scores: 
+[('LearningAgent', 1.0879728600154712), ('Primo', 0.7232199047267125)]
+Scores: 
+[('LearningAgent', 0.9670945209912383), ('Primo', 0.7224290725990754)]
+Scores: 
+[('LearningAgent', 1.0888299815284475), ('Primo', 0.6465981431733236)]
+Scores: 
+[('LearningAgent', 0.9179366547741212), ('Primo', 0.6832098511478533)]
+Scores: 
+[('LearningAgent', 0.831843143638475), ('Primo', 0.7024334326240541)]
+Scores: 
+[('LearningAgent', 1.196162847122466), ('Primo', 0.717455903008592)]
+Scores: 
+[('LearningAgent', 1.2555306280579521), ('Primo', 0.7510995653917663)]
+Scores: 
+[('LearningAgent', 0.8110162361769984), ('Primo', 0.7219344385357197)]
+Scores: 
+[('LearningAgent', 0.9151618413617971), ('Primo', 0.5888367443476875)]
+Scores: 
+[('LearningAgent', 1.1315431927531545), ('Primo', 0.68627232039875)]
+Scores: 
+[('LearningAgent', 0.948312746882682), ('Primo', 0.5513906684749118)]
+Scores: 
+[('LearningAgent', 0.8573312560949419), ('Primo', 0.6794019538575039)]
+Scores: 
+[('LearningAgent', 0.9214800018048797), ('Primo', 0.4050653672456406)]
+Scores: 
+[('LearningAgent', 0.7964764674793446), ('Primo', 0.7459488867537547)]
+Scores: 
+[('LearningAgent', 1.015272763744543), ('Primo', 0.7254900113767107)]
+Scores: 
+[('LearningAgent', 1.279225780133967), ('Primo', 0.5967424696223385)]
+Scores: 
+[('LearningAgent', 1.011359664727564), ('Primo', 0.7369885084194577)]
+Scores: 
+[('LearningAgent', 1.0556801097779844), ('Primo', 0.5998292766912519)]
+Scores: 
+[('LearningAgent', 1.0559708485757502), ('Primo', 0.568932790107164)]
+Scores: 
+[('LearningAgent', 1.0012045152221252), ('Primo', 0.619769317652685)]
+Scores: 
+[('LearningAgent', 1.0935412092058419), ('Primo', 0.5876447501783871)]
+Scores: 
+[('LearningAgent', 1.049138705175196), ('Primo', 0.7245219875989772)]
+Scores: 
+[('LearningAgent', 1.0067615864349453), ('Primo', 0.7145842952578311)]
+Scores: 
+[('LearningAgent', 1.1511756377775197), ('Primo', 0.6767035448185846)]
+Scores: 
+[('LearningAgent', 1.0186994832965717), ('Primo', 0.7409322420332126)]
+Scores: 
+[('Primo', 0.5683256522441122), ('LearningAgent', 0.5454958749638812)]
+Scores: 
+[('LearningAgent', 1.057152863590091), ('Primo', 0.6923057527514077)]
+Scores: 
+[('LearningAgent', 1.096981618719846), ('Primo', 0.7439796559704861)]
+Scores: 
+[('Primo', 0.6969774044429784), ('LearningAgent', 0.684743293867931)]
+Scores: 
+[('LearningAgent', 1.1364324058966202), ('Primo', 0.7964837136461334)]
+Scores: 
+[('LearningAgent', 1.011532316616169), ('Primo', 0.5764225834809643)]
+Scores: 
+[('LearningAgent', 0.899470279631149), ('Primo', 0.5988643932236668)]
+Scores: 
+[('LearningAgent', 0.9460766468064342), ('Primo', 0.6859301362296716)]
+Scores: 
+[('LearningAgent', 0.7111190422142857), ('Primo', 0.6779453782173053)]
+Scores: 
+[('LearningAgent', 1.0823877753632412), ('Primo', 0.6151772251270637)]
+Scores: 
+[('LearningAgent', 0.8572693178467999), ('Primo', 0.7614842752239814)]
+Scores: 
+[('LearningAgent', 0.8861787139479602), ('Primo', 0.5069540076594726)]
+Scores: 
+[('LearningAgent', 1.2189297612089987), ('Primo', 0.6850059917951267)]
+Scores: 
+[('LearningAgent', 0.8849184989243893), ('Primo', 0.7289855179093216)]
+Scores: 
+[('LearningAgent', 1.05118245756646), ('Primo', 0.6066866596972671)]
+Scores: 
+[('LearningAgent', 1.0478363859439146), ('Primo', 0.6419318929629145)]
+Scores: 
+[('LearningAgent', 0.8687041993278407), ('Primo', 0.6521655924905927)]
+Scores: 
+[('LearningAgent', 1.0086867608679928), ('Primo', 0.6996741486470501)]
+Scores: 
+[('LearningAgent', 0.991521795468092), ('Primo', 0.6482822248865058)]
+Scores: 
+[('Primo', 0.7751136519876107), ('LearningAgent', 0.657690627568981)]
+Scores: 
+[('LearningAgent', 1.1463357795645654), ('Primo', 0.6561820315141628)]
+Scores: 
+[('LearningAgent', 1.0568040569856936), ('Primo', 0.6967006701419921)]
+Scores: 
+[('LearningAgent', 1.1199056222246049), ('Primo', 0.5998727588001217)]
+Scores: 
+[('LearningAgent', 0.9382306285908442), ('Primo', 0.6830433674473778)]
+Scores: 
+[('LearningAgent', 1.068842002691092), ('Primo', 0.6421629830555998)]
+Scores: 
+[('LearningAgent', 0.8883778619096168), ('Primo', 0.5906634393790022)]
+Scores: 
+[('LearningAgent', 1.2635062763302112), ('Primo', 0.6857991391332302)]
+Scores: 
+[('LearningAgent', 1.0386194543845373), ('Primo', 0.722007221938577)]
+Scores: 
+[('LearningAgent', 0.9141945898844985), ('Primo', 0.605075470793473)]
+Scores: 
+[('LearningAgent', 1.111908911847313), ('Primo', 0.77445429237937)]
+Scores: 
+[('LearningAgent', 0.9221559638751035), ('Primo', 0.6725365426863741)]
+Scores: 
+[('LearningAgent', 0.9730762593683867), ('Primo', 0.6172186974781628)]
+Scores: 
+[('LearningAgent', 0.8277437427828632), ('Primo', 0.6474193874088141)]
+Scores: 
+[('LearningAgent', 1.3366502463054188), ('Primo', 0.656240674055728)]
+Scores: 
+[('LearningAgent', 0.8527732690945875), ('Primo', 0.7564267947902511)]
+Scores: 
+[('LearningAgent', 1.0441268708460254), ('Primo', 0.7130112260480884)]
+Scores: 
+[('LearningAgent', 1.180370366089509), ('Primo', 0.7173179478343485)]
+Scores: 
+[('Primo', 0.7018665996983154), ('LearningAgent', 0.6811873560761357)]
+Scores: 
+[('LearningAgent', 0.9689752867848241), ('Primo', 0.69504534739385)]
+Scores: 
+[('LearningAgent', 0.9877420027598155), ('Primo', 0.7779344523126267)]
+Scores: 
+[('LearningAgent', 1.0065087134271562), ('Primo', 0.670424543154475)]
+Scores: 
+[('LearningAgent', 0.9837598594037759), ('Primo', 0.5038498076178486)]
+Scores: 
+[('LearningAgent', 0.9821021247639949), ('Primo', 0.7071449288858469)]
+Scores: 
+[('LearningAgent', 0.8592416588425453), ('Primo', 0.556147315734174)]
+Scores: 
+[('LearningAgent', 1.0291546885857152), ('Primo', 0.6908108364552179)]
+Scores: 
+[('LearningAgent', 0.9233928592218378), ('Primo', 0.6737941967482813)]
+Scores: 
+[('Primo', 0.7051517592107687), ('LearningAgent', 0.6102280368060763)]
+Scores: 
+[('LearningAgent', 0.7680426936538265), ('Primo', 0.6729866216600436)]
+Scores: 
+[('LearningAgent', 0.8170004802024691), ('Primo', 0.6363488879293058)]
+Scores: 
+[('LearningAgent', 0.7220602588950876), ('Primo', 0.6938404004467905)]
+Scores: 
+[('LearningAgent', 0.9723399034861568), ('Primo', 0.6998429780164397)]
+Scores: 
+[('LearningAgent', 1.0954871104158823), ('Primo', 0.5914345145212385)]
+Scores: 
+[('LearningAgent', 0.9720972967013318), ('Primo', 0.6253134878888911)]
+Scores: 
+[('LearningAgent', 1.0051982188104263), ('Primo', 0.7387209571628395)]
+Scores: 
+[('LearningAgent', 0.8255413512425646), ('Primo', 0.7144898359296161)]
+Scores: 
+[('LearningAgent', 0.9034694765473031), ('Primo', 0.5842503193187985)]
+Scores: 
+[('LearningAgent', 0.8270516265865273), ('Primo', 0.615987286493953)]
+Scores: 
+[('LearningAgent', 1.3810792804796803), ('Primo', 0.6722579986938713)]
+Scores: 
+[('LearningAgent', 1.0496790566816787), ('Primo', 0.744015644267197)]
+Scores: 
+[('LearningAgent', 0.890343116824108), ('Primo', 0.6846013864837188)]
+Scores: 
+[('LearningAgent', 0.8373011100921903), ('Primo', 0.6185341890951218)]
+Scores: 
+[('LearningAgent', 0.869875677719835), ('Primo', 0.6135214371168041)]
+Scores: 
+[('LearningAgent', 1.0056714908388913), ('Primo', 0.328688308765287)]
+Scores: 
+[('LearningAgent', 1.137669630456119), ('Primo', 0.6108766157487326)]
+Scores: 
+[('LearningAgent', 1.3049392437038687), ('Primo', 0.5772642457700483)]
+Scores: 
+[('LearningAgent', 1.198857582997973), ('Primo', 0.6033871324175559)]
+Scores: 
+[('LearningAgent', 0.8246645380218811), ('Primo', 0.636014695908941)]
+Scores: 
+[('LearningAgent', 1.0794724711171455), ('Primo', 0.710909864299766)]
+Scores: 
+[('LearningAgent', 1.185660881447916), ('Primo', 0.689364613371364)]
+Scores: 
+[('Primo', 0.6565676289720647), ('LearningAgent', 0.5037211387810484)]
+Scores: 
+[('LearningAgent', 0.8404364943106675), ('Primo', 0.7014277251197596)]
+Scores: 
+[('LearningAgent', 1.1667722137397452), ('Primo', 0.6844114233261707)]
+Scores: 
+[('LearningAgent', 0.982339931520543), ('Primo', 0.7638417481064034)]
+Scores: 
+[('LearningAgent', 0.8047325714321388), ('Primo', 0.7122396457904248)]
+Scores: 
+[('LearningAgent', 0.968286811286043), ('Primo', 0.6721929559358054)]
+Scores: 
+[('LearningAgent', 0.8051150367951941), ('Primo', 0.6058293613069953)]
+Scores: 
+[('LearningAgent', 0.7857386575922233), ('Primo', 0.7241073829424475)]
+Scores: 
+[('LearningAgent', 1.0973606102142353), ('Primo', 0.5103045902841692)]
+Scores: 
+[('LearningAgent', 1.0806904390202825), ('Primo', 0.6547127531848661)]
+Scores: 
+[('LearningAgent', 0.8556681611504608), ('Primo', 0.605063300533014)]
+Scores: 
+[('LearningAgent', 1.1255415408407634), ('Primo', 0.6488698181742917)]
+Scores: 
+[('LearningAgent', 1.0799933798903174), ('Primo', 0.6913346089708685)]
+Scores: 
+[('LearningAgent', 0.8891096323304633), ('Primo', 0.6998932029372578)]
+Scores: 
+[('LearningAgent', 1.0170416048724797), ('Primo', 0.7062969830436084)]
+Scores: 
+[('LearningAgent', 0.9445919531718513), ('Primo', 0.6822120803044128)]
+Scores: 
+[('LearningAgent', 1.027553189724135), ('Primo', 0.6813898724817185)]
+Scores: 
+[('LearningAgent', 0.826374303277885), ('Primo', 0.5697577173511851)]
+Scores: 
+[('LearningAgent', 0.9524379496332093), ('Primo', 0.7753030227392788)]
+Scores: 
+[('Primo', 0.7230865078585849), ('LearningAgent', 0.6557467772413198)]
+Scores: 
+[('LearningAgent', 1.2377309518258652), ('Primo', 0.7251181011129649)]
+Scores: 
+[('LearningAgent', 0.8234186246043628), ('Primo', 0.660475275661415)]
+Scores: 
+[('LearningAgent', 0.9334044223692831), ('Primo', 0.7153309338893212)]
+Scores: 
+[('LearningAgent', 1.4471410941999177), ('Primo', 0.6400299009999771)]
+Scores: 
+[('LearningAgent', 0.8070181649065256), ('Primo', 0.5185302737357845)]
+Scores: 
+[('LearningAgent', 1.0075601869497082), ('Primo', 0.6953354787572406)]
+Scores: 
+[('LearningAgent', 0.9248421552781443), ('Primo', 0.614083501423396)]
+Scores: 
+[('LearningAgent', 0.9938320800550281), ('Primo', 0.7020823245234723)]
+Scores: 
+[('LearningAgent', 1.0143108540030037), ('Primo', 0.7205294134521921)]
+Scores: 
+[('LearningAgent', 0.8783180247050068), ('Primo', 0.7199287543856047)]
+Scores: 
+[('LearningAgent', 0.8359454970423938), ('Primo', 0.648474867425982)]
+Scores: 
+[('LearningAgent', 1.0781893781865066), ('Primo', 0.6597094349284389)]
+Scores: 
+[('LearningAgent', 1.224860052449667), ('Primo', 0.6792504193994615)]
+Scores: 
+[('LearningAgent', 0.8469235281805874), ('Primo', 0.6903744976515781)]
+Scores: 
+[('LearningAgent', 1.3320138545274616), ('Primo', 0.690009352404144)]
+Scores: 
+[('LearningAgent', 1.0025593874377192), ('Primo', 0.4516629166255853)]
+Scores: 
+[('LearningAgent', 0.8549375449767714), ('Primo', 0.7268390698141571)]
+Scores: 
+[('LearningAgent', 1.0841951613469683), ('Primo', 0.7290051847061402)]
+Scores: 
+[('LearningAgent', 1.147254811388145), ('Primo', 0.6697583420776855)]
+Scores: 
+[('LearningAgent', 1.0387303180760183), ('Primo', 0.6153071999854955)]
+Scores: 
+[('LearningAgent', 1.0909531530889471), ('Primo', 0.6223624972558026)]
+Scores: 
+[('LearningAgent', 1.043823071413145), ('Primo', 0.513934185257723)]
+Scores: 
+[('LearningAgent', 0.9292524076150277), ('Primo', 0.5743266519226177)]
+Scores: 
+[('LearningAgent', 0.8520231614558562), ('Primo', 0.6380566448026984)]
+Scores: 
+[('LearningAgent', 1.0867593427739306), ('Primo', 0.700628718218641)]
+Scores: 
+[('Primo', 0.7796044018442725), ('LearningAgent', 0.7677225160918786)]
+Scores: 
+[('LearningAgent', 0.7778555133454196), ('Primo', 0.5201877647627918)]
+Scores: 
+[('LearningAgent', 0.870581059773097), ('Primo', 0.6568488994565103)]
+Scores: 
+[('LearningAgent', 0.8748629476668164), ('Primo', 0.7450329192547621)]
+Scores: 
+[('LearningAgent', 1.025764190214795), ('Primo', 0.7037657689247074)]
+Scores: 
+[('LearningAgent', 0.8317175130202529), ('Primo', 0.6780516880189159)]
+Scores: 
+[('Primo', 0.7350700104214059), ('LearningAgent', 0.6274389920334217)]
+Scores: 
+[('LearningAgent', 1.380742249377687), ('Primo', 0.5678389339267024)]
+Scores: 
+[('LearningAgent', 1.1387076942664793), ('Primo', 0.6430867422709361)]
+Scores: 
+[('LearningAgent', 0.9892698841849494), ('Primo', 0.6953872153153763)]
+Scores: 
+[('LearningAgent', 1.0464081544037902), ('Primo', 0.686694173929977)]
+Scores: 
+[('LearningAgent', 1.0010558038607011), ('Primo', 0.6986483494850274)]
+Scores: 
+[('LearningAgent', 0.7918357873785278), ('Primo', 0.7499876780858373)]
+Scores: 
+[('LearningAgent', 0.9771280976864071), ('Primo', 0.6930561691009214)]
+Scores: 
+[('LearningAgent', 1.1348005503711194), ('Primo', 0.5288352624975857)]
+Scores: 
+[('LearningAgent', 0.8672588261563527), ('Primo', 0.6675083798036279)]
+Scores: 
+[('LearningAgent', 0.8354252384675906), ('Primo', 0.714503248857228)]
+Scores: 
+[('LearningAgent', 1.211631151699645), ('Primo', 0.75558146075438)]
+Scores: 
+[('LearningAgent', 1.1258575200697623), ('Primo', 0.7582324130036627)]
+Scores: 
+[('Primo', 0.7179357046793685), ('LearningAgent', 0.595437916643314)]
+Scores: 
+[('LearningAgent', 0.8782274600625488), ('Primo', 0.8094911482697289)]
+Scores: 
+[('LearningAgent', 1.0320155132705449), ('Primo', 0.6797686020870776)]
+Scores: 
+[('LearningAgent', 0.8784043335898101), ('Primo', 0.7631543144117422)]
+Scores: 
+[('LearningAgent', 0.8012925671011253), ('Primo', 0.6596575887113049)]
+Scores: 
+[('LearningAgent', 1.118984427518666), ('Primo', 0.572186853285455)]
+Scores: 
+[('LearningAgent', 1.0018563559653464), ('Primo', 0.7366714858703768)]
+Scores: 
+[('LearningAgent', 1.1165300810698602), ('Primo', 0.663803670767706)]
+Scores: 
+[('LearningAgent', 0.8604708374497534), ('Primo', 0.6646404428012971)]
+Scores: 
+[('LearningAgent', 1.0408332154779427), ('Primo', 0.7908754313110588)]
+Scores: 
+[('LearningAgent', 0.9650566614007533), ('Primo', 0.43717532684332994)]
+Scores: 
+[('LearningAgent', 0.8027091087806867), ('Primo', 0.6505505191164449)]
+Scores: 
+[('LearningAgent', 0.6788439916592452), ('Primo', 0.6012184237938624)]
+Scores: 
+[('LearningAgent', 0.9421522828046262), ('Primo', 0.6717687665595266)]
+Scores: 
+[('LearningAgent', 1.364678333744146), ('Primo', 0.7123455009103734)]
+Scores: 
+[('LearningAgent', 0.8725822783196334), ('Primo', 0.4788244099496274)]
+Scores: 
+[('LearningAgent', 0.7287084376615918), ('Primo', 0.7005182096708185)]
+Scores: 
+[('LearningAgent', 0.7880103585973173), ('Primo', 0.716384075960369)]
+Scores: 
+[('LearningAgent', 0.9060381830466533), ('Primo', 0.7631978636740534)]
+Scores: 
+[('LearningAgent', 0.958003070296297), ('Primo', 0.6117807248850873)]
+Scores: 
+[('LearningAgent', 1.2035092139994044), ('Primo', 0.5301941462826738)]
+Scores: 
+[('LearningAgent', 1.0059088036243686), ('Primo', 0.5649340586581232)]
+Scores: 
+[('LearningAgent', 0.9778973771986548), ('Primo', 0.6906018057276637)]
+Scores: 
+[('LearningAgent', 0.96023180935459), ('Primo', 0.7065057060634901)]
+Scores: 
+[('LearningAgent', 0.8339935682411527), ('Primo', 0.6704917723375798)]
+Scores: 
+[('LearningAgent', 1.0900491345402912), ('Primo', 0.7121781537063974)]
+Scores: 
+[('LearningAgent', 0.7718964051885816), ('Primo', 0.7142994163236694)]
+Scores: 
+[('LearningAgent', 1.0137728786590814), ('Primo', 0.6236942768815106)]
+Scores: 
+[('LearningAgent', 0.9956440921965035), ('Primo', 0.6747976763158985)]
+Scores: 
+[('LearningAgent', 1.0862365582868017), ('Primo', 0.6137762550419307)]
+Scores: 
+[('LearningAgent', 1.0382005430710441), ('Primo', 0.6775151010569017)]
+Scores: 
+[('LearningAgent', 0.9593823986848662), ('Primo', 0.6893905562299582)]
+Scores: 
+[('Primo', 0.7633738508119989), ('LearningAgent', 0.6493987103085834)]
+Scores: 
+[('LearningAgent', 1.2779167411113097), ('Primo', 0.7323385149802597)]
+Scores: 
+[('LearningAgent', 0.9323834448758612), ('Primo', 0.7372750384582367)]
+Scores: 
+[('LearningAgent', 1.1046489154200048), ('Primo', 0.6600637668403495)]
+Scores: 
+[('LearningAgent', 0.8512379553565855), ('Primo', 0.6820228555021045)]
+Scores: 
+[('LearningAgent', 0.8848101823931783), ('Primo', 0.7304276479951497)]
+Scores: 
+[('LearningAgent', 0.8780701271505734), ('Primo', 0.7500099626047082)]
+Scores: 
+[('LearningAgent', 1.3237989816249722), ('Primo', 0.7472045926386321)]
+Scores: 
+[('LearningAgent', 0.9719961261123579), ('Primo', 0.6210453752194842)]
+Scores: 
+[('Primo', 0.7262546054857775), ('LearningAgent', 0.6261369057498916)]
+Scores: 
+[('LearningAgent', 0.9104891268508588), ('Primo', 0.7564338018919831)]
+Scores: 
+[('LearningAgent', 1.0927114178310846), ('Primo', 0.5918222826328794)]
+Scores: 
+[('LearningAgent', 1.1422259162695207), ('Primo', 0.6911025371391258)]
+Scores: 
+[('Primo', 0.7378484306060156), ('LearningAgent', 0.7104245843910558)]
+Scores: 
+[('LearningAgent', 0.8722449818442367), ('Primo', 0.741530288494697)]
+Scores: 
+[('LearningAgent', 0.967195169950981), ('Primo', 0.6988118466368469)]
+Scores: 
+[('LearningAgent', 1.0257386174872885), ('Primo', 0.6724717372981948)]
+Scores: 
+[('LearningAgent', 0.7359112842125765), ('Primo', 0.5127748923160069)]
+Scores: 
+[('LearningAgent', 1.2718221607020528), ('Primo', 0.6354964032008568)]
+Scores: 
+[('LearningAgent', 1.1411171751400246), ('Primo', 0.6806498078737312)]
+Scores: 
+[('Primo', 0.647367422341673), ('LearningAgent', 0.5354149244641043)]
+Scores: 
+[('LearningAgent', 0.8093508072199146), ('Primo', 0.6578268080410162)]
+Scores: 
+[('LearningAgent', 1.0129480218756344), ('Primo', 0.68154222386061)]
+Scores: 
+[('LearningAgent', 0.9538171206018836), ('Primo', 0.7375599658130513)]
+Scores: 
+[('LearningAgent', 1.0967758991637162), ('Primo', 0.5157568360695102)]
+Scores: 
+[('Primo', 0.7628489508381898), ('LearningAgent', 0.6292500042802452)]
+Scores: 
+[('LearningAgent', 1.1348254673920595), ('Primo', 0.7116732546646151)]
+Scores: 
+[('LearningAgent', 1.1657676745606593), ('Primo', 0.6766140238927778)]
+Scores: 
+[('LearningAgent', 1.145112129191803), ('Primo', 0.692357878554005)]
+Scores: 
+[('LearningAgent', 1.0243569545227262), ('Primo', 0.6168850172728241)]
+Scores: 
+[('LearningAgent', 1.0592609058178901), ('Primo', 0.7458617859273455)]
+Scores: 
+[('LearningAgent', 1.060034031269656), ('Primo', 0.7132291226660282)]
+Scores: 
+[('LearningAgent', 1.0621536252376602), ('Primo', 0.577249903508054)]
+Scores: 
+[('LearningAgent', 1.1801084364325276), ('Primo', 0.5875136053321033)]
+Scores: 
+[('LearningAgent', 0.8376349163461901), ('Primo', 0.7640681546410635)]
+Scores: 
+[('LearningAgent', 1.1676191271457), ('Primo', 0.5645333460272586)]
+Scores: 
+[('LearningAgent', 1.089670411350749), ('Primo', 0.6599193374240725)]
+Scores: 
+[('LearningAgent', 0.7820283984490318), ('Primo', 0.5996136144617337)]
+Scores: 
+[('LearningAgent', 0.9375492811161406), ('Primo', 0.5430731496237876)]
+Scores: 
+[('LearningAgent', 0.8292641400126812), ('Primo', 0.7658789216660629)]
+Scores: 
+[('LearningAgent', 0.9635321905316625), ('Primo', 0.7487295776454421)]
+Scores: 
+[('LearningAgent', 0.9890624471750804), ('Primo', 0.7076700688240963)]
+Scores: 
+[('LearningAgent', 1.023185309171396), ('Primo', 0.7954572476657936)]
+Scores: 
+[('LearningAgent', 0.9715217968446092), ('Primo', 0.6755554788895161)]
+Scores: 
+[('LearningAgent', 0.9361915473861473), ('Primo', 0.8052078114085164)]
+Scores: 
+[('LearningAgent', 1.0204243767866499), ('Primo', 0.531567522710477)]
+Scores: 
+[('LearningAgent', 0.8806036022205339), ('Primo', 0.70239414172025)]
+Scores: 
+[('LearningAgent', 0.7986461911115006), ('Primo', 0.7090268399134019)]
+Scores: 
+[('LearningAgent', 1.123034834270915), ('Primo', 0.6572792366956541)]
+Scores: 
+[('LearningAgent', 1.1538140641793062), ('Primo', 0.6157848883559932)]
+Scores: 
+[('LearningAgent', 0.8175221093147326), ('Primo', 0.6769898323564508)]
+Scores: 
+[('LearningAgent', 0.9582537009777544), ('Primo', 0.6858661132404902)]
+Scores: 
+[('LearningAgent', 0.7597635956578223), ('Primo', 0.6938881383538009)]
+Scores: 
+[('LearningAgent', 1.314507695569994), ('Primo', 0.6588091037220642)]
+Scores: 
+[('LearningAgent', 0.912846082375971), ('Primo', 0.6373055815469473)]
+Scores: 
+[('LearningAgent', 0.9446355257593353), ('Primo', 0.6732725911257751)]
+Scores: 
+[('LearningAgent', 1.2125954194390958), ('Primo', 0.6744968141696173)]
+Scores: 
+[('LearningAgent', 0.9342270101545084), ('Primo', 0.6465037474246843)]
+Scores: 
+[('LearningAgent', 0.9660567007161497), ('Primo', 0.743960773383223)]
+Scores: 
+[('LearningAgent', 0.8002289812807983), ('Primo', 0.6160014244882375)]
+Scores: 
+[('LearningAgent', 0.83978851211253), ('Primo', 0.735291148191142)]
+Scores: 
+[('LearningAgent', 0.9597096544092569), ('Primo', 0.7006100466798831)]
+Scores: 
+[('LearningAgent', 0.8888705506503981), ('Primo', 0.7422453648464733)]
+Scores: 
+[('LearningAgent', 0.7294697500871464), ('Primo', 0.6577588107418116)]
+Scores: 
+[('LearningAgent', 0.9662236265219021), ('Primo', 0.7780988953695226)]
+Scores: 
+[('LearningAgent', 1.180600976847915), ('Primo', 0.6312189165262572)]
+Scores: 
+[('LearningAgent', 0.9604443064197307), ('Primo', 0.656175377377315)]
+Scores: 
+[('LearningAgent', 0.9855890282636668), ('Primo', 0.5362492018069932)]
+Scores: 
+[('LearningAgent', 0.690995770409467), ('Primo', 0.6537921350032012)]
+Scores: 
+[('LearningAgent', 0.9737414683181801), ('Primo', 0.5539786768886379)]
+Scores: 
+[('LearningAgent', 1.0167121877070888), ('Primo', 0.5440993065531975)]
+Scores: 
+[('LearningAgent', 1.0703634345048347), ('Primo', 0.6868854519663445)]
+Scores: 
+[('LearningAgent', 0.8213465217140664), ('Primo', 0.6451918576364689)]
+Scores: 
+[('LearningAgent', 1.0037826377545955), ('Primo', 0.5548756526588318)]
+Scores: 
+[('LearningAgent', 1.16790939881937), ('Primo', 0.6843803519701779)]
+Scores: 
+[('Primo', 0.6081062261008423), ('LearningAgent', 0.5463762049623744)]
+Scores: 
+[('LearningAgent', 0.8722920695197988), ('Primo', 0.7604830454172997)]
+Scores: 
+[('LearningAgent', 1.1590893721965865), ('Primo', 0.5730665709754227)]
+Scores: 
+[('LearningAgent', 0.97404026769577), ('Primo', 0.6422514673279193)]
+Scores: 
+[('LearningAgent', 1.1381290660816106), ('Primo', 0.6693078428464198)]
+Scores: 
+[('LearningAgent', 0.9758850596410764), ('Primo', 0.7153636038239777)]
+Scores: 
+[('LearningAgent', 1.0433722751250134), ('Primo', 0.7009635547460833)]
+Scores: 
+[('LearningAgent', 0.7182473522712818), ('Primo', 0.6561186026761321)]
+Scores: 
+[('LearningAgent', 0.8996193602771863), ('Primo', 0.5653237334669629)]
+Scores: 
+[('LearningAgent', 0.9030190115697034), ('Primo', 0.8097058402535645)]
+Scores: 
+[('LearningAgent', 1.017167189974405), ('Primo', 0.6604639301664312)]
+Scores: 
+[('LearningAgent', 0.9279772277491295), ('Primo', 0.7801377020552467)]
+Scores: 
+[('LearningAgent', 0.9899419348514643), ('Primo', 0.6728670338540299)]
+Scores: 
+[('LearningAgent', 0.9836646356546936), ('Primo', 0.7002167612200795)]
+Scores: 
+[('LearningAgent', 1.0790254602529827), ('Primo', 0.5636937310953445)]
+Scores: 
+[('Primo', 0.7567796785195731), ('LearningAgent', 0.5869851564707914)]
+Scores: 
+[('LearningAgent', 1.4267537826685008), ('Primo', 0.6764334969630788)]
+Scores: 
+[('LearningAgent', 0.8039478243507805), ('Primo', 0.6618038039642382)]
+Scores: 
+[('LearningAgent', 1.2034931151217427), ('Primo', 0.7029124255417739)]
+Scores: 
+[('LearningAgent', 0.8542729220549058), ('Primo', 0.7530521683076011)]
+Scores: 
+[('LearningAgent', 1.0276439568250404), ('Primo', 0.615842461821338)]
+Scores: 
+[('LearningAgent', 1.0908637316127348), ('Primo', 0.5376547639544877)]
+Scores: 
+[('LearningAgent', 1.1545597386533568), ('Primo', 0.5878898826377377)]
+Scores: 
+[('LearningAgent', 0.8323887687743292), ('Primo', 0.443268235996766)]
+Scores: 
+[('LearningAgent', 1.0320234120146128), ('Primo', 0.6278224210100243)]
+Scores: 
+[('LearningAgent', 1.0466131183949332), ('Primo', 0.6021906162068437)]
+Scores: 
+[('LearningAgent', 1.1031445468648216), ('Primo', 0.6661840929586333)]
+Scores: 
+[('LearningAgent', 0.827185060691399), ('Primo', 0.6504030264219379)]
+Scores: 
+[('LearningAgent', 1.1824043211898145), ('Primo', 0.6163431462141749)]
+Scores: 
+[('LearningAgent', 1.0630746469451637), ('Primo', 0.7332898283461196)]
+Scores: 
+[('LearningAgent', 1.0863500726875353), ('Primo', 0.5818878573293933)]
+Scores: 
+[('LearningAgent', 0.7935803807095025), ('Primo', 0.6345638878106634)]
+Scores: 
+[('LearningAgent', 1.0798061867724975), ('Primo', 0.5829405879706077)]
+Scores: 
+[('LearningAgent', 1.080887951315689), ('Primo', 0.678753550036659)]
+Scores: 
+[('LearningAgent', 0.9183024061407057), ('Primo', 0.7163492718563392)]
+Scores: 
+[('LearningAgent', 1.0483333263482078), ('Primo', 0.6968362309377822)]
+Scores: 
+[('LearningAgent', 0.9381326555477955), ('Primo', 0.7177118334215742)]
+Scores: 
+[('LearningAgent', 1.0995027177347438), ('Primo', 0.5600561492143715)]
+Scores: 
+[('LearningAgent', 1.1028117411461356), ('Primo', 0.6635393484031455)]
+Scores: 
+[('LearningAgent', 1.0646227487217579), ('Primo', 0.5433023495064111)]
+Scores: 
+[('LearningAgent', 0.9953854619885731), ('Primo', 0.5884773611525106)]
+Scores: 
+[('LearningAgent', 1.0330115652544936), ('Primo', 0.6221076463677858)]
+Scores: 
+[('LearningAgent', 1.0425803002011782), ('Primo', 0.7099283813088715)]
+Scores: 
+[('Primo', 0.6463285494639606), ('LearningAgent', 0.5536273562051262)]
+Scores: 
+[('LearningAgent', 1.2352002187960578), ('Primo', 0.6249658810950528)]
+Scores: 
+[('LearningAgent', 1.1600722088969837), ('Primo', 0.7420548249965913)]
+Scores: 
+[('LearningAgent', 0.8151650006876217), ('Primo', 0.696629173156944)]
+Scores: 
+[('LearningAgent', 1.0846167467448), ('Primo', 0.7234547311116606)]
+Scores: 
+[('LearningAgent', 0.6467257633739684), ('Primo', 0.550484406618253)]
+Scores: 
+[('LearningAgent', 1.2265950069348128), ('Primo', 0.7122742627729329)]
+Scores: 
+[('LearningAgent', 1.0414164026540966), ('Primo', 0.49221730631934013)]
+Scores: 
+[('LearningAgent', 1.0718288398005829), ('Primo', 0.4576826074769925)]
+Scores: 
+[('LearningAgent', 0.9325060794852362), ('Primo', 0.7206140228219732)]
+Scores: 
+[('LearningAgent', 1.1710323859772322), ('Primo', 0.67289295948052)]
+Scores: 
+[('LearningAgent', 1.3532890857041397), ('Primo', 0.6835581381007616)]
+Scores: 
+[('LearningAgent', 1.2676984075560256), ('Primo', 0.589362433270009)]
+Scores: 
+[('LearningAgent', 1.0613119357003358), ('Primo', 0.7142592710568366)]
+Scores: 
+[('LearningAgent', 0.8203683649612348), ('Primo', 0.7363117408082566)]
+Scores: 
+[('LearningAgent', 1.0115748193201337), ('Primo', 0.617135225450766)]
+Scores: 
+[('LearningAgent', 0.851981138856276), ('Primo', 0.6019955989837562)]
+Scores: 
+[('LearningAgent', 1.114041970890327), ('Primo', 0.6395999332519045)]
+Scores: 
+[('LearningAgent', 1.0049683073153757), ('Primo', 0.5826488996829577)]
+Scores: 
+[('LearningAgent', 0.9412698976901664), ('Primo', 0.7133555912487854)]
+Scores: 
+[('LearningAgent', 0.9028099186753881), ('Primo', 0.7543097671922276)]
+Scores: 
+[('LearningAgent', 1.05695022466588), ('Primo', 0.6994064223009474)]
+Scores: 
+[('Primo', 0.7653727878987979), ('LearningAgent', 0.6439984341571747)]
+Scores: 
+[('LearningAgent', 0.8988528979376665), ('Primo', 0.5606635750222115)]
+Scores: 
+[('LearningAgent', 0.8910365852921552), ('Primo', 0.3653884738823305)]
+Scores: 
+[('LearningAgent', 1.0645073401648473), ('Primo', 0.7242600985093546)]
+Scores: 
+[('LearningAgent', 1.0354208551139263), ('Primo', 0.6347483414972659)]
+Scores: 
+[('LearningAgent', 0.9820186216522047), ('Primo', 0.7309227134782657)]
+Scores: 
+[('LearningAgent', 0.9047309928152045), ('Primo', 0.7434764899889806)]
+Scores: 
+[('LearningAgent', 1.2360415344748028), ('Primo', 0.7306043848457568)]
+Scores: 
+[('LearningAgent', 1.136872044779098), ('Primo', 0.654196334759934)]
+Scores: 
+[('LearningAgent', 1.0382848444792785), ('Primo', 0.7321678887242035)]
+Scores: 
+[('LearningAgent', 1.0315084579114675), ('Primo', 0.5573704542974544)]
+Scores: 
+[('LearningAgent', 1.2196700312947608), ('Primo', 0.6375921839941077)]
+Scores: 
+[('LearningAgent', 0.9358812789779679), ('Primo', 0.6890394179366439)]
+Scores: 
+[('LearningAgent', 0.8354778080746014), ('Primo', 0.5196291401026337)]
+Scores: 
+[('LearningAgent', 1.1101857587123423), ('Primo', 0.7885639164353047)]
+Scores: 
+[('LearningAgent', 0.9033776232011341), ('Primo', 0.7138890342101742)]
+Scores: 
+[('LearningAgent', 0.9417432450272426), ('Primo', 0.7734120302800027)]
+Scores: 
+[('LearningAgent', 1.1545359129170936), ('Primo', 0.7230126223188895)]
+Scores: 
+[('LearningAgent', 0.8472359438787421), ('Primo', 0.6985116641255592)]
+Scores: 
+[('LearningAgent', 1.1947098494482962), ('Primo', 0.7222872840426307)]
+Scores: 
+[('LearningAgent', 1.1464532047353355), ('Primo', 0.7074076844094596)]
+Scores: 
+[('LearningAgent', 1.1773684612500068), ('Primo', 0.6329666732589908)]
+Scores: 
+[('LearningAgent', 1.0056605327286086), ('Primo', 0.642642971822539)]
+Scores: 
+[('LearningAgent', 0.9740874952178729), ('Primo', 0.6119566886396547)]
+Scores: 
+[('LearningAgent', 0.9716749790622927), ('Primo', 0.6762046244144744)]
+Scores: 
+[('LearningAgent', 1.0709756872409906), ('Primo', 0.74701315074032)]
+Scores: 
+[('LearningAgent', 0.7843018766163614), ('Primo', 0.7190465887925603)]
+Scores: 
+[('LearningAgent', 0.9621565022065447), ('Primo', 0.6831109953692511)]
+Scores: 
+[('LearningAgent', 0.92086032040514), ('Primo', 0.7162379621671812)]
+Scores: 
+[('LearningAgent', 0.814666277715784), ('Primo', 0.6845963363424362)]
+Scores: 
+[('LearningAgent', 0.8764601161697658), ('Primo', 0.7668457661737935)]
+Scores: 
+[('LearningAgent', 0.6232120570947675), ('Primo', 0.5418389024264072)]
+Scores: 
+[('LearningAgent', 1.0293366858108401), ('Primo', 0.7057147238023771)]
+Scores: 
+[('LearningAgent', 0.91452495366446), ('Primo', 0.6808947058427137)]
+Scores: 
+[('LearningAgent', 1.2489190858554662), ('Primo', 0.5919160045592649)]
+Scores: 
+[('LearningAgent', 1.0959334351731567), ('Primo', 0.519556811995811)]
+Scores: 
+[('LearningAgent', 1.0315953112926441), ('Primo', 0.7625296776721082)]
+Scores: 
+[('LearningAgent', 0.9286174629096837), ('Primo', 0.666582530154836)]
+Scores: 
+[('LearningAgent', 1.327069757107164), ('Primo', 0.676270732473689)]
+Scores: 
+[('LearningAgent', 0.8416590612183231), ('Primo', 0.7686160995120888)]
+Scores: 
+[('LearningAgent', 0.6528295746343944), ('Primo', 0.6268334543475007)]
+Scores: 
+[('LearningAgent', 1.1018496796391544), ('Primo', 0.6364288435613291)]
+Scores: 
+[('Primo', 0.6810471590071149), ('LearningAgent', 0.5872996383676578)]
+Scores: 
+[('LearningAgent', 0.9342793743819922), ('Primo', 0.5411313885252004)]
+Scores: 
+[('LearningAgent', 1.2810379125112403), ('Primo', 0.6270591297014237)]
+Scores: 
+[('LearningAgent', 1.1895361196508984), ('Primo', 0.6049881100787768)]
+Scores: 
+[('LearningAgent', 1.031836232045245), ('Primo', 0.607162832679077)]
+Scores: 
+[('LearningAgent', 0.8978367784939285), ('Primo', 0.5392682549390483)]
+Scores: 
+[('LearningAgent', 0.9215888769244288), ('Primo', 0.7463652058370274)]
+Scores: 
+[('LearningAgent', 1.070909571642187), ('Primo', 0.7107094343525755)]
+Scores: 
+[('LearningAgent', 1.1158630545051245), ('Primo', 0.7362117954427343)]
+Scores: 
+[('LearningAgent', 1.0183053460952847), ('Primo', 0.6678073010447686)]
+Scores: 
+[('LearningAgent', 1.166772034352805), ('Primo', 0.622404112123478)]
+Scores: 
+[('LearningAgent', 1.1318649544693593), ('Primo', 0.6902669364367627)]
+Scores: 
+[('LearningAgent', 1.2884739127764222), ('Primo', 0.6603502867601957)]
+Scores: 
+[('LearningAgent', 0.9605642808854951), ('Primo', 0.6602436882004962)]
+Scores: 
+[('LearningAgent', 1.1936002005938642), ('Primo', 0.6735665275529332)]
+Scores: 
+[('LearningAgent', 1.0449685033170337), ('Primo', 0.7454928645692247)]
+Scores: 
+[('LearningAgent', 1.0728359042825477), ('Primo', 0.6918594741590098)]
+Scores: 
+[('LearningAgent', 0.8791490908910924), ('Primo', 0.865005240144472)]
+Scores: 
+[('LearningAgent', 0.8930920942530749), ('Primo', 0.6945409362077687)]
+Scores: 
+[('LearningAgent', 0.9642172516303984), ('Primo', 0.618966196591727)]
+Scores: 
+[('LearningAgent', 0.7230482666887512), ('Primo', 0.688231556970822)]
+Scores: 
+[('LearningAgent', 0.9593705832267099), ('Primo', 0.664979774696317)]
+Scores: 
+[('LearningAgent', 1.0240334043087598), ('Primo', 0.7127731911147158)]
+Scores: 
+[('LearningAgent', 0.8764771383162331), ('Primo', 0.7012532749275207)]
+Scores: 
+[('LearningAgent', 0.9059027131437422), ('Primo', 0.7129107248628239)]
+Scores: 
+[('LearningAgent', 1.0740358853446816), ('Primo', 0.4396202745019506)]
+Scores: 
+[('LearningAgent', 0.7661848221624943), ('Primo', 0.6754175562992045)]
+Scores: 
+[('LearningAgent', 0.9772110619761302), ('Primo', 0.5930852325133966)]
+Scores: 
+[('LearningAgent', 0.9239709114380718), ('Primo', 0.6924360349302833)]
+Scores: 
+[('LearningAgent', 0.9009216644496598), ('Primo', 0.658130956582834)]
+Scores: 
+[('LearningAgent', 1.201266627145173), ('Primo', 0.7046452951124192)]
+Scores: 
+[('LearningAgent', 1.0465428270860166), ('Primo', 0.6713707915818725)]
+Scores: 
+[('LearningAgent', 0.8867646024898607), ('Primo', 0.6060016522887335)]
+Scores: 
+[('LearningAgent', 0.6406658456410677), ('Primo', 0.6397057556275478)]
+Scores: 
+[('LearningAgent', 1.003931129167404), ('Primo', 0.651873490340365)]
+Scores: 
+[('LearningAgent', 1.0018012291993195), ('Primo', 0.6555223129814789)]
+Scores: 
+[('LearningAgent', 0.9648823560204863), ('Primo', 0.7321581820356523)]
+Scores: 
+[('LearningAgent', 0.9171881151274017), ('Primo', 0.5841154795425968)]
+Scores: 
+[('LearningAgent', 1.1067027755289622), ('Primo', 0.5603191742729232)]
+Scores: 
+[('LearningAgent', 0.9628949066215031), ('Primo', 0.5172031123987656)]
+Scores: 
+[('Primo', 0.7353180236532008), ('LearningAgent', 0.7253583766979118)]
+Scores: 
+[('LearningAgent', 1.0268434366918122), ('Primo', 0.5810655183217024)]
+Scores: 
+[('LearningAgent', 0.9952217367915818), ('Primo', 0.6979892953473248)]
+Scores: 
+[('LearningAgent', 0.9983584194306162), ('Primo', 0.5865292852248885)]
+Scores: 
+[('LearningAgent', 1.1581764194984117), ('Primo', 0.5715286113913882)]
+Scores: 
+[('LearningAgent', 0.8459632693669703), ('Primo', 0.5881443381141483)]
+Scores: 
+[('LearningAgent', 0.8720696082901961), ('Primo', 0.7636760258117533)]
+Scores: 
+[('LearningAgent', 1.2186439830920683), ('Primo', 0.7013008719332866)]
+Scores: 
+[('LearningAgent', 1.0316221622084916), ('Primo', 0.6903006268332695)]
+Scores: 
+[('LearningAgent', 0.8339750895224605), ('Primo', 0.6868548954564347)]
+Scores: 
+[('LearningAgent', 1.0362106059739897), ('Primo', 0.5047289835143466)]
+Scores: 
+[('LearningAgent', 0.7407785380063187), ('Primo', 0.6620745830953287)]
+Scores: 
+[('LearningAgent', 1.1075545182204898), ('Primo', 0.651972672950624)]
+Scores: 
+[('LearningAgent', 0.8300181289544607), ('Primo', 0.7258745525906972)]
+Scores: 
+[('LearningAgent', 0.6906642012693843), ('Primo', 0.5636767492195565)]
+Scores: 
+[('LearningAgent', 1.366076760948741), ('Primo', 0.5173866993332272)]
+Scores: 
+[('LearningAgent', 1.010987464257797), ('Primo', 0.7039218778344029)]
+Scores: 
+[('LearningAgent', 1.056366992992539), ('Primo', 0.7021580304971969)]
+Scores: 
+[('LearningAgent', 0.8961001460348116), ('Primo', 0.7042055452896623)]
+Scores: 
+[('LearningAgent', 1.2096409131700019), ('Primo', 0.7160289530887158)]
+Scores: 
+[('LearningAgent', 0.9810237769330693), ('Primo', 0.7839093560109032)]
+Scores: 
+[('LearningAgent', 1.1095543824363834), ('Primo', 0.6396760927599879)]
+Scores: 
+[('LearningAgent', 0.816731217526568), ('Primo', 0.7821908003994122)]
+Scores: 
+[('LearningAgent', 0.6224402536467136), ('Primo', 0.5380643055889316)]
+Scores: 
+[('LearningAgent', 1.045325079762581), ('Primo', 0.7257202201002985)]
+Scores: 
+[('LearningAgent', 0.8922345687902518), ('Primo', 0.4612489361907809)]
+Scores: 
+[('LearningAgent', 1.2257526023166132), ('Primo', 0.6265062363436217)]
+Scores: 
+[('LearningAgent', 1.0960253657943317), ('Primo', 0.609778789035791)]
+Scores: 
+[('LearningAgent', 0.9816417094534596), ('Primo', 0.7076946197152145)]
+Scores: 
+[('LearningAgent', 1.1285354799778495), ('Primo', 0.6567092453825342)]
+Scores: 
+[('LearningAgent', 1.2048253134398323), ('Primo', 0.6518036418668183)]
+Scores: 
+[('LearningAgent', 1.0186400571784127), ('Primo', 0.6603892383372215)]
+Scores: 
+[('LearningAgent', 0.9886016821403351), ('Primo', 0.48764606538041433)]
+Scores: 
+[('LearningAgent', 0.9758969493450214), ('Primo', 0.7617403054257949)]
+Scores: 
+[('LearningAgent', 0.8829988452032802), ('Primo', 0.5778490072186051)]
+Scores: 
+[('LearningAgent', 1.0295631147633009), ('Primo', 0.6972447528809769)]
+Scores: 
+[('LearningAgent', 0.8275584471829978), ('Primo', 0.6895825732964055)]
+Scores: 
+[('LearningAgent', 0.9355100529541227), ('Primo', 0.722827383462362)]
+Scores: 
+[('Primo', 0.6202380181242756), ('LearningAgent', 0.6002778914970196)]
+Scores: 
+[('LearningAgent', 0.8309308879072702), ('Primo', 0.5950966004677858)]
+Scores: 
+[('LearningAgent', 0.8399493290440109), ('Primo', 0.7612797809262971)]
+Scores: 
+[('LearningAgent', 0.8672056498955459), ('Primo', 0.6419658870601496)]
+Scores: 
+[('LearningAgent', 0.8835368070356223), ('Primo', 0.7065499190299871)]
+Scores: 
+[('LearningAgent', 1.1510331228824264), ('Primo', 0.6813246050007257)]
+Scores: 
+[('LearningAgent', 1.0594567092809037), ('Primo', 0.714030845215999)]
+Scores: 
+[('LearningAgent', 0.8162628612855102), ('Primo', 0.7175604179661672)]
+Scores: 
+[('LearningAgent', 1.114573329525327), ('Primo', 0.620311184158023)]
+Scores: 
+[('LearningAgent', 0.9959290398895687), ('Primo', 0.5896105109467307)]
+Scores: 
+[('LearningAgent', 0.8621453194293437), ('Primo', 0.7290461497806633)]
+Scores: 
+[('LearningAgent', 0.8549768156576106), ('Primo', 0.6279468510756473)]
+Scores: 
+[('LearningAgent', 1.012932230732626), ('Primo', 0.6976617760851993)]
+Scores: 
+[('LearningAgent', 0.9150219687151661), ('Primo', 0.6292114211151729)]
+Scores: 
+[('LearningAgent', 1.0363785585625886), ('Primo', 0.6522319105134547)]
+Scores: 
+[('LearningAgent', 1.2887996791607357), ('Primo', 0.5777621910519031)]
+Scores: 
+[('LearningAgent', 1.0535034075889353), ('Primo', 0.5689975830993688)]
+Scores: 
+[('LearningAgent', 1.033569419220188), ('Primo', 0.598361180688286)]
+Scores: 
+[('LearningAgent', 1.2395171502120759), ('Primo', 0.631139526440684)]
+Scores: 
+[('LearningAgent', 0.8746265972604303), ('Primo', 0.7679356427937474)]
+Scores: 
+[('LearningAgent', 1.0776490602254454), ('Primo', 0.6476051639279448)]
+Scores: 
+[('LearningAgent', 0.8976141920717488), ('Primo', 0.7296712918179629)]
+Scores: 
+[('LearningAgent', 0.7611658624440728), ('Primo', 0.5875693573918024)]
+Scores: 
+[('LearningAgent', 0.9024212199599377), ('Primo', 0.5540302310573771)]
+Scores: 
+[('LearningAgent', 0.697586843309004), ('Primo', 0.6484442803048031)]
+Scores: 
+[('LearningAgent', 0.8411893770289061), ('Primo', 0.5597135471815524)]
+Scores: 
+[('LearningAgent', 0.9419300965378654), ('Primo', 0.6621160465319458)]
+Scores: 
+[('LearningAgent', 1.035317330490288), ('Primo', 0.6720154307578198)]
+Scores: 
+[('LearningAgent', 0.9442452142287403), ('Primo', 0.700429445301416)]
+Scores: 
+[('LearningAgent', 1.0319769257665885), ('Primo', 0.610346112115752)]
+Scores: 
+[('LearningAgent', 0.9083067951781978), ('Primo', 0.5911072087534773)]
+Scores: 
+[('LearningAgent', 0.7209210029308513), ('Primo', 0.5582199010341884)]
+Scores: 
+[('LearningAgent', 1.04351599433832), ('Primo', 0.7685124345139743)]
+Scores: 
+[('LearningAgent', 1.0335651837676088), ('Primo', 0.5226763512684722)]
+Scores: 
+[('LearningAgent', 0.854204880781708), ('Primo', 0.7623782171933227)]
+Scores: 
+[('LearningAgent', 0.7874014705575962), ('Primo', 0.6616354643931823)]
+Scores: 
+[('LearningAgent', 1.0768443361725022), ('Primo', 0.6920568296251716)]
+Scores: 
+[('LearningAgent', 1.0778751477073587), ('Primo', 0.7250292208555148)]
+Scores: 
+[('LearningAgent', 1.2569016393732226), ('Primo', 0.7192064588214092)]
+Scores: 
+[('LearningAgent', 1.3772867664528394), ('Primo', 0.693600529270648)]
+Scores: 
+[('LearningAgent', 0.963049476413805), ('Primo', 0.6930192887196746)]
+Scores: 
+[('LearningAgent', 0.9378608694494466), ('Primo', 0.7259470994433844)]
+Scores: 
+[('LearningAgent', 0.7201354516077322), ('Primo', 0.6252604455565413)]
+Scores: 
+[('LearningAgent', 0.9246242743521346), ('Primo', 0.5826465579774054)]
+Scores: 
+[('LearningAgent', 1.0017348586133499), ('Primo', 0.7790837592051707)]
+Scores: 
+[('LearningAgent', 1.0500782966996052), ('Primo', 0.7132169866824626)]
+Scores: 
+[('LearningAgent', 1.0861998822320766), ('Primo', 0.7044250743204505)]
+Scores: 
+[('LearningAgent', 1.0743943111026186), ('Primo', 0.5730548652894426)]
+Scores: 
+[('LearningAgent', 0.7789736057481861), ('Primo', 0.7187281409080871)]
+Scores: 
+[('LearningAgent', 1.0106026050915806), ('Primo', 0.7170126635317368)]
+Scores: 
+[('LearningAgent', 0.9729002259010825), ('Primo', 0.6742708924939438)]
+Scores: 
+[('LearningAgent', 0.7822207678162115), ('Primo', 0.530567904491977)]
+Scores: 
+[('LearningAgent', 1.0108197305713669), ('Primo', 0.622855071887484)]
+Scores: 
+[('LearningAgent', 0.7811601997635604), ('Primo', 0.6180555023058729)]
+Scores: 
+[('LearningAgent', 1.0111647092292422), ('Primo', 0.7301818903351767)]
+Scores: 
+[('LearningAgent', 1.2023033436092665), ('Primo', 0.656716142235946)]
+Scores: 
+[('LearningAgent', 1.4930838079739628), ('Primo', 0.6013296899708984)]
+Scores: 
+[('LearningAgent', 1.0269387111806205), ('Primo', 0.7795006113886337)]
+Scores: 
+[('LearningAgent', 1.0881046225654658), ('Primo', 0.33324236497262044)]
+Scores: 
+[('LearningAgent', 1.0010292486531234), ('Primo', 0.7093552565327687)]
+Scores: 
+[('LearningAgent', 0.931221445534448), ('Primo', 0.7938461977499319)]
+Scores: 
+[('LearningAgent', 0.9264045672494171), ('Primo', 0.6973286444401957)]
+Scores: 
+[('Primo', 0.6943008114328165), ('LearningAgent', 0.6834768902282529)]
+Scores: 
+[('LearningAgent', 0.9089785197940511), ('Primo', 0.6472887227808046)]
+Scores: 
+[('LearningAgent', 0.8318312125717618), ('Primo', 0.72147445780221)]
+Scores: 
+[('LearningAgent', 1.100919923158346), ('Primo', 0.6740220901943511)]
+Scores: 
+[('LearningAgent', 1.3462496379959454), ('Primo', 0.7052456998301944)]
+Scores: 
+[('LearningAgent', 0.8108490061313645), ('Primo', 0.8065801107757707)]
+Scores: 
+[('LearningAgent', 1.0709644334869926), ('Primo', 0.6959666652118258)]
+Scores: 
+[('LearningAgent', 0.9492670384117063), ('Primo', 0.7531689979485842)]
+Scores: 
+[('LearningAgent', 1.0413742318861081), ('Primo', 0.7050014174030386)]
+Scores: 
+[('LearningAgent', 0.8630933608297582), ('Primo', 0.6917329299049874)]
+Scores: 
+[('LearningAgent', 0.6791727879977788), ('Primo', 0.6210193452769452)]
+Scores: 
+[('LearningAgent', 1.0807875371692885), ('Primo', 0.5594871573996676)]
+Scores: 
+[('LearningAgent', 0.9731929916108369), ('Primo', 0.7791926919666728)]
+Scores: 
+[('LearningAgent', 1.0487853175808377), ('Primo', 0.6877626458581111)]
+Scores: 
+[('LearningAgent', 1.1242262997125716), ('Primo', 0.637270514076712)]
+Scores: 
+[('LearningAgent', 0.9966165400667218), ('Primo', 0.6663414083565905)]
+Scores: 
+[('LearningAgent', 1.118062531189534), ('Primo', 0.6464479312284489)]
+Scores: 
+[('LearningAgent', 0.9186402929793892), ('Primo', 0.7117521147086974)]
+Scores: 
+[('LearningAgent', 0.9493794017454047), ('Primo', 0.7676096449223154)]
+Scores: 
+[('LearningAgent', 0.7975082252504565), ('Primo', 0.7591503739734112)]
+Scores: 
+[('LearningAgent', 1.3708757132225253), ('Primo', 0.5099942393430535)]
+Scores: 
+[('LearningAgent', 1.0210415170268088), ('Primo', 0.6691408210192391)]
+Scores: 
+[('LearningAgent', 1.0653471419570848), ('Primo', 0.6920200498175972)]
+Scores: 
+[('LearningAgent', 1.1914076079493436), ('Primo', 0.5488982220085799)]
+Scores: 
+[('LearningAgent', 1.1300897614582741), ('Primo', 0.6413801771415077)]
+Scores: 
+[('Primo', 0.6585875154760721), ('LearningAgent', 0.6004132474939486)]
+Scores: 
+[('Primo', 0.6691956007593503), ('LearningAgent', 0.5833299988463051)]
+Scores: 
+[('LearningAgent', 1.0561926795449355), ('Primo', 0.5139577858413442)]
+Scores: 
+[('LearningAgent', 1.0707570255056287), ('Primo', 0.6415276604778397)]
+Scores: 
+[('LearningAgent', 0.8940374352914527), ('Primo', 0.7201288432781039)]
+Scores: 
+[('LearningAgent', 0.969776932724725), ('Primo', 0.5858385533695724)]
+Scores: 
+[('LearningAgent', 0.9867660734814995), ('Primo', 0.7843053563810873)]
+Scores: 
+[('LearningAgent', 0.8978081058952849), ('Primo', 0.7214696821778365)]
+Scores: 
+[('LearningAgent', 0.9982025723452617), ('Primo', 0.7505994353933755)]
+Scores: 
+[('LearningAgent', 0.9697289273561644), ('Primo', 0.5839573146917363)]
+Scores: 
+[('LearningAgent', 0.8719604647502572), ('Primo', 0.7621578111337426)]
+Scores: 
+[('LearningAgent', 1.252477348649863), ('Primo', 0.6559904736554044)]
+Scores: 
+[('LearningAgent', 1.0711278063697505), ('Primo', 0.6143384106327281)]
+Scores: 
+[('LearningAgent', 1.0259453135091061), ('Primo', 0.6964053879814492)]
+Scores: 
+[('LearningAgent', 0.8979794811734277), ('Primo', 0.6978290078030515)]
+Scores: 
+[('LearningAgent', 0.8259374549730119), ('Primo', 0.7102470039430608)]
+Scores: 
+[('LearningAgent', 0.8881030529839317), ('Primo', 0.6174443506743558)]
+Scores: 
+[('LearningAgent', 0.9521913407110562), ('Primo', 0.7036520386666534)]
+Scores: 
+[('LearningAgent', 0.9856018419468063), ('Primo', 0.7146078670945445)]
+Scores: 
+[('LearningAgent', 1.0720380242491614), ('Primo', 0.6352806998217094)]
+Scores: 
+[('LearningAgent', 1.054286697018907), ('Primo', 0.685967539957866)]
+Scores: 
+[('LearningAgent', 0.9124227876716631), ('Primo', 0.6859832882283886)]
+Scores: 
+[('LearningAgent', 0.9482681258054256), ('Primo', 0.6716332662076202)]
+Scores: 
+[('LearningAgent', 0.9144988541197376), ('Primo', 0.6520646261391262)]
+Scores: 
+[('LearningAgent', 0.9628940056924985), ('Primo', 0.7344492292925929)]
+Scores: 
+[('LearningAgent', 0.7541136500836267), ('Primo', 0.687440396341497)]
+Scores: 
+[('LearningAgent', 0.9319687410176659), ('Primo', 0.5604133227113678)]
+Scores: 
+[('LearningAgent', 0.9665420655754426), ('Primo', 0.7233244517123326)]
+Scores: 
+[('LearningAgent', 0.9787982005350065), ('Primo', 0.7611981126536105)]
+Scores: 
+[('LearningAgent', 0.9298826217331749), ('Primo', 0.70231532724328)]
+Scores: 
+[('LearningAgent', 1.056455977703011), ('Primo', 0.5893076682085396)]
+Scores: 
+[('LearningAgent', 1.0228035618125206), ('Primo', 0.7419392387544931)]
+Scores: 
+[('LearningAgent', 1.1208279996462749), ('Primo', 0.7660229681830518)]
+Scores: 
+[('LearningAgent', 1.0557032877019288), ('Primo', 0.7603915142390266)]
+Scores: 
+[('LearningAgent', 1.0556700478904968), ('Primo', 0.6862529361984833)]
+Scores: 
+[('LearningAgent', 0.8931139164743737), ('Primo', 0.6172791313995001)]
+Scores: 
+[('LearningAgent', 1.1235202097422077), ('Primo', 0.7787357821089316)]
+Scores: 
+[('LearningAgent', 0.7507308055458575), ('Primo', 0.6404820206613973)]
+Scores: 
+[('LearningAgent', 1.1194069737503973), ('Primo', 0.7579640409354419)]
+Scores: 
+[('LearningAgent', 0.8994970221117001), ('Primo', 0.6306006087922118)]
+Scores: 
+[('LearningAgent', 0.9632237888568405), ('Primo', 0.7158287631179339)]
+Scores: 
+[('LearningAgent', 0.9541747751955928), ('Primo', 0.636256828942271)]
+Scores: 
+[('LearningAgent', 0.9661027784538033), ('Primo', 0.723466607609704)]
+Scores: 
+[('LearningAgent', 0.8703247959410818), ('Primo', 0.7648994842627999)]
+Scores: 
+[('LearningAgent', 1.2849177595781562), ('Primo', 0.6255995444996326)]
+Scores: 
+[('LearningAgent', 1.0387261703146276), ('Primo', 0.6743775259632185)]
+Scores: 
+[('LearningAgent', 0.7635602705752064), ('Primo', 0.7167668739912774)]
+Scores: 
+[('LearningAgent', 0.907345326391245), ('Primo', 0.7884684563938903)]
+Scores: 
+[('LearningAgent', 0.8758407728248442), ('Primo', 0.666135966231274)]
+Scores: 
+[('LearningAgent', 0.9372095010635446), ('Primo', 0.6909443383114334)]
+Scores: 
+[('LearningAgent', 0.9863467195327114), ('Primo', 0.6556249228639591)]
+Scores: 
+[('LearningAgent', 1.0822684011295929), ('Primo', 0.7014178487029705)]
+Scores: 
+[('LearningAgent', 1.0600684022936882), ('Primo', 0.7705652590618016)]
+Scores: 
+[('LearningAgent', 1.3256991852014974), ('Primo', 0.6400630795402917)]
+Scores: 
+[('LearningAgent', 0.9573512302030994), ('Primo', 0.7899999040684682)]
+Scores: 
+[('LearningAgent', 0.8002915632687643), ('Primo', 0.7982752749834832)]
+Scores: 
+[('LearningAgent', 1.104041140142697), ('Primo', 0.5880405271128931)]
+Scores: 
+[('LearningAgent', 0.8649540383371274), ('Primo', 0.7245214547980534)]
+Scores: 
+[('Primo', 0.7822776907479743), ('LearningAgent', 0.7799954759247845)]
+Scores: 
+[('LearningAgent', 0.6806051193650671), ('Primo', 0.661242590550475)]
+Scores: 
+[('LearningAgent', 1.299948132780083), ('Primo', 0.6804609122050747)]
+Scores: 
+[('LearningAgent', 1.0648164776817826), ('Primo', 0.6617362536004335)]
+Scores: 
+[('LearningAgent', 1.1378134493945693), ('Primo', 0.7320513391959559)]
+Scores: 
+[('LearningAgent', 1.1534562247183864), ('Primo', 0.7120615321074282)]
+Scores: 
+[('LearningAgent', 1.0730409184097038), ('Primo', 0.6011717265860211)]
+Scores: 
+[('LearningAgent', 1.0389031653417549), ('Primo', 0.6129130849592515)]
+Scores: 
+[('LearningAgent', 1.1273107936983409), ('Primo', 0.7560430301186296)]
+Scores: 
+[('LearningAgent', 1.0550591757999903), ('Primo', 0.6401789963459354)]
+Scores: 
+[('LearningAgent', 0.9464729664401026), ('Primo', 0.7690496838726014)]
+Scores: 
+[('LearningAgent', 0.8766244204987945), ('Primo', 0.7144491201083889)]
+Scores: 
+[('LearningAgent', 1.0223686271537384), ('Primo', 0.6911312224886266)]
+Scores: 
+[('LearningAgent', 0.9116405005830522), ('Primo', 0.6691522793425294)]
+Scores: 
+[('LearningAgent', 0.9795355164705597), ('Primo', 0.6834536675973784)]
+Scores: 
+[('LearningAgent', 0.8077094414668627), ('Primo', 0.6498707828975926)]
+Scores: 
+[('LearningAgent', 1.0056042690183968), ('Primo', 0.7230507234488313)]
+Scores: 
+[('LearningAgent', 1.1705582162356727), ('Primo', 0.5032184826795214)]
+Scores: 
+[('LearningAgent', 0.9408072981996359), ('Primo', 0.7345102572105038)]
+Scores: 
+[('LearningAgent', 0.8940111069642435), ('Primo', 0.8896903798967984)]
+Scores: 
+[('LearningAgent', 0.8462938372585175), ('Primo', 0.66781028853544)]
+Scores: 
+[('LearningAgent', 1.0476030759164376), ('Primo', 0.6823541891333951)]
+Scores: 
+[('LearningAgent', 0.9451161937629116), ('Primo', 0.7561268038277278)]
+Scores: 
+[('LearningAgent', 0.766007367648633), ('Primo', 0.6209564628866249)]
+Scores: 
+[('LearningAgent', 0.856974829098777), ('Primo', 0.7009607276403803)]
+Scores: 
+[('LearningAgent', 1.1193130471576718), ('Primo', 0.6224035112436914)]
+Scores: 
+[('LearningAgent', 0.8380211145670481), ('Primo', 0.6209357588459723)]
+Scores: 
+[('LearningAgent', 1.020034487418799), ('Primo', 0.6353110355674012)]
+Scores: 
+[('LearningAgent', 0.9486952270455904), ('Primo', 0.6878649475363332)]
+Scores: 
+[('LearningAgent', 0.9642090394756213), ('Primo', 0.7512748594199127)]
+Scores: 
+[('LearningAgent', 1.1455568482746696), ('Primo', 0.6599974844953717)]
+Scores: 
+[('LearningAgent', 1.0449611604029874), ('Primo', 0.660665836623831)]
+Scores: 
+[('LearningAgent', 0.90803568437108), ('Primo', 0.7269725333094897)]
+Scores: 
+[('LearningAgent', 1.1364976900305275), ('Primo', 0.6117890452807463)]
+Scores: 
+[('LearningAgent', 0.7626580835419168), ('Primo', 0.7334953269480073)]
+Scores: 
+[('LearningAgent', 1.0235125574604567), ('Primo', 0.6123259180895734)]
+Scores: 
+[('LearningAgent', 0.9661112044843665), ('Primo', 0.7291718726172396)]
+Scores: 
+[('LearningAgent', 0.9709086057828301), ('Primo', 0.7069439470472011)]
+Scores: 
+[('LearningAgent', 1.482390185991294), ('Primo', 0.6073031965961272)]
+Scores: 
+[('LearningAgent', 0.9348340561192714), ('Primo', 0.6787792150967321)]
+Scores: 
+[('LearningAgent', 0.9400720219196146), ('Primo', 0.6941043294686131)]
+Scores: 
+[('Primo', 0.6607645505119117), ('LearningAgent', 0.6169617774775987)]
+Scores: 
+[('LearningAgent', 0.8984348686942375), ('Primo', 0.7505070979722175)]
+Scores: 
+[('LearningAgent', 1.1295784674258704), ('Primo', 0.6806588020234089)]
+Scores: 
+[('LearningAgent', 1.2360578606396704), ('Primo', 0.6246959719968419)]
+Scores: 
+[('LearningAgent', 0.7355775524218986), ('Primo', 0.6723204972059509)]
+Scores: 
+[('LearningAgent', 0.9203081536766464), ('Primo', 0.7063030504719745)]
+Scores: 
+[('LearningAgent', 1.1882843353931132), ('Primo', 0.7067525163564028)]
+Scores: 
+[('LearningAgent', 0.9415574129387747), ('Primo', 0.6054071288286439)]
+Scores: 
+[('LearningAgent', 0.7151526013052999), ('Primo', 0.6587885109434783)]
+Scores: 
+[('LearningAgent', 0.9777403312348499), ('Primo', 0.7334276171119646)]
+Scores: 
+[('LearningAgent', 0.8639316851457716), ('Primo', 0.6900479401439351)]
+Scores: 
+[('LearningAgent', 1.1011406598524307), ('Primo', 0.7610714763519719)]
+Scores: 
+[('LearningAgent', 1.2440671152072798), ('Primo', 0.6296335422849436)]
+Scores: 
+[('LearningAgent', 1.1310731273648273), ('Primo', 0.7337494132168055)]
+Scores: 
+[('LearningAgent', 1.0428508613740388), ('Primo', 0.7171281176592886)]
+Scores: 
+[('LearningAgent', 0.8573164738521054), ('Primo', 0.702649765578618)]
+Scores: 
+[('LearningAgent', 1.0737870557542883), ('Primo', 0.7019689021267035)]
+Scores: 
+[('LearningAgent', 0.919120869068156), ('Primo', 0.6122900183441256)]
+Scores: 
+[('LearningAgent', 0.8070942214620206), ('Primo', 0.6633632662597653)]
+Scores: 
+[('LearningAgent', 1.1051900468452223), ('Primo', 0.6650683930790628)]
+Scores: 
+[('LearningAgent', 0.9294792986031589), ('Primo', 0.6439141725087657)]
+Scores: 
+[('LearningAgent', 1.055113237562858), ('Primo', 0.4923504858933607)]
+Scores: 
+[('LearningAgent', 0.9120218302503731), ('Primo', 0.7032217063891106)]
+Scores: 
+[('LearningAgent', 1.065014293358268), ('Primo', 0.7542312073733165)]
+Scores: 
+[('LearningAgent', 0.7726485448842345), ('Primo', 0.702199389740767)]
+Scores: 
+[('LearningAgent', 0.8834503899272081), ('Primo', 0.690843805208663)]
+Scores: 
+[('LearningAgent', 1.0876795146111822), ('Primo', 0.7489275454457344)]
+Scores: 
+[('LearningAgent', 0.985261330349514), ('Primo', 0.5580125891446982)]
+Scores: 
+[('LearningAgent', 1.0026311647414707), ('Primo', 0.7013137856905703)]
+Scores: 
+[('LearningAgent', 1.1143554617496838), ('Primo', 0.7009412339769078)]
+Scores: 
+[('LearningAgent', 0.9709825878674763), ('Primo', 0.535105092488838)]
+Scores: 
+[('LearningAgent', 0.8032987311648988), ('Primo', 0.7119171887473896)]
+Scores: 
+[('LearningAgent', 0.978010610312125), ('Primo', 0.6719514525110123)]
+Scores: 
+[('LearningAgent', 1.14090684335536), ('Primo', 0.620980227025096)]
+Scores: 
+[('LearningAgent', 1.1572279108854813), ('Primo', 0.7108939963295322)]
+Scores: 
+[('Primo', 0.6696663201190771), ('LearningAgent', 0.4725071870973087)]
+Scores: 
+[('LearningAgent', 1.111075821829005), ('Primo', 0.6642397544586631)]
+Scores: 
+[('LearningAgent', 0.7282902960146084), ('Primo', 0.632903829448599)]
+Scores: 
+[('LearningAgent', 0.9394295366334003), ('Primo', 0.6479873054628256)]
+Scores: 
+[('LearningAgent', 1.1591392349034877), ('Primo', 0.6516592118367759)]
+Scores: 
+[('LearningAgent', 1.02678111139837), ('Primo', 0.8423927897208144)]
+Scores: 
+[('LearningAgent', 0.9228918168824769), ('Primo', 0.813566485380123)]
+Scores: 
+[('LearningAgent', 1.2311299462814627), ('Primo', 0.6773683897673418)]
+Scores: 
+[('LearningAgent', 0.8939863326538555), ('Primo', 0.656381475544823)]
+Scores: 
+[('LearningAgent', 1.1103613657409261), ('Primo', 0.6409867221212775)]
+Scores: 
+[('LearningAgent', 1.1167459495602363), ('Primo', 0.7241103728923928)]
+Scores: 
+[('LearningAgent', 1.125798508367228), ('Primo', 0.6276773515823003)]
+Scores: 
+[('LearningAgent', 0.8508616966352239), ('Primo', 0.71649028702221)]
+Scores: 
+[('LearningAgent', 1.0345047195182178), ('Primo', 0.7021991236055373)]
+Scores: 
+[('LearningAgent', 1.1437837763470189), ('Primo', 0.7046590388422042)]
+Scores: 
+[('LearningAgent', 1.143769577470034), ('Primo', 0.635699090358052)]
+Scores: 
+[('LearningAgent', 1.0652543102648664), ('Primo', 0.7471003955793973)]
+Scores: 
+[('LearningAgent', 0.9059893648072033), ('Primo', 0.7534826913061706)]
+Scores: 
+[('LearningAgent', 1.2521054338109086), ('Primo', 0.7488099095198288)]
+Scores: 
+[('LearningAgent', 0.8008151817379195), ('Primo', 0.7051696522696745)]
+Scores: 
+[('LearningAgent', 1.1079256051955706), ('Primo', 0.7375954569508721)]
+Scores: 
+[('LearningAgent', 1.0191544722922985), ('Primo', 0.743145384438292)]
+Scores: 
+[('LearningAgent', 0.8682189567338784), ('Primo', 0.7659093586818109)]
+Scores: 
+[('LearningAgent', 1.0041446590272893), ('Primo', 0.736542948434071)]
+Scores: 
+[('LearningAgent', 1.0778192662546349), ('Primo', 0.5744004884905262)]
+Scores: 
+[('LearningAgent', 0.9806090253520862), ('Primo', 0.7584401696469808)]
+Scores: 
+[('LearningAgent', 1.0569569228025297), ('Primo', 0.6727342765285369)]
+Scores: 
+[('LearningAgent', 0.9023216519681053), ('Primo', 0.6922771174388614)]
+Scores: 
+[('LearningAgent', 1.288696549721766), ('Primo', 0.4984832358122521)]
+Scores: 
+[('LearningAgent', 1.0252729881849836), ('Primo', 0.6313617839641144)]
+Scores: 
+[('LearningAgent', 0.8436886691379686), ('Primo', 0.5530783687068559)]
+Scores: 
+[('LearningAgent', 1.0582218854868017), ('Primo', 0.7025796067212383)]
+Scores: 
+[('LearningAgent', 0.848578134258423), ('Primo', 0.8340998332028718)]
+Scores: 
+[('LearningAgent', 0.9558174663159758), ('Primo', 0.7284267774091137)]
+Scores: 
+[('LearningAgent', 0.9884229517172894), ('Primo', 0.6554540550499153)]
+Scores: 
+[('LearningAgent', 1.2718782361556162), ('Primo', 0.5173189877016229)]
+Scores: 
+[('LearningAgent', 0.9731115252878207), ('Primo', 0.649651173380864)]
+Scores: 
+[('LearningAgent', 0.9085766643777606), ('Primo', 0.7267164888251278)]
+Scores: 
+[('LearningAgent', 1.1190910835999632), ('Primo', 0.6875781208449558)]
+Scores: 
+[('LearningAgent', 0.9685148743465682), ('Primo', 0.6610951341175083)]
+Scores: 
+[('LearningAgent', 1.1023515168353284), ('Primo', 0.5615408835761251)]
+Scores: 
+[('LearningAgent', 0.8939581628594173), ('Primo', 0.6602142382190819)]
+Scores: 
+[('LearningAgent', 0.8657516378268352), ('Primo', 0.6523093335550645)]
+Scores: 
+[('LearningAgent', 0.7790386402448002), ('Primo', 0.7060082888595747)]
+Scores: 
+[('LearningAgent', 1.0866555890504044), ('Primo', 0.6463462599594183)]
+Scores: 
+[('LearningAgent', 1.0563560384753148), ('Primo', 0.6344769426036619)]
+Scores: 
+[('LearningAgent', 1.0263219404301909), ('Primo', 0.6960964589999667)]
+Scores: 
+[('LearningAgent', 1.10975497340482), ('Primo', 0.5659110676846165)]
+Scores: 
+[('LearningAgent', 0.8547758163376841), ('Primo', 0.7499718213814364)]
+Scores: 
+[('Primo', 0.6840758193662361), ('LearningAgent', 0.6088747682888144)]
+Scores: 
+[('LearningAgent', 0.8921059626723249), ('Primo', 0.7009732131393588)]
+Scores: 
+[('LearningAgent', 0.979164393777714), ('Primo', 0.6265630952249382)]
+Scores: 
+[('LearningAgent', 0.8985937154263192), ('Primo', 0.687825593777862)]
+Scores: 
+[('LearningAgent', 0.7609333258879141), ('Primo', 0.6368419242734492)]
+Scores: 
+[('LearningAgent', 0.7210847816159658), ('Primo', 0.5884305505627241)]
+Scores: 
+[('LearningAgent', 0.9463689008319098), ('Primo', 0.7433296007760658)]
+Scores: 
+[('LearningAgent', 1.0987448275240574), ('Primo', 0.7638489169813302)]
+Scores: 
+[('LearningAgent', 0.9808176908801954), ('Primo', 0.674851075211297)]
+Scores: 
+[('Primo', 0.7258670650650463), ('LearningAgent', 0.7236905287046347)]
+Scores: 
+[('LearningAgent', 1.041415847650788), ('Primo', 0.7297578716018625)]
+Scores: 
+[('LearningAgent', 0.9799077311513833), ('Primo', 0.5987960716533103)]
+Scores: 
+[('LearningAgent', 0.9989892335617093), ('Primo', 0.6668727039751281)]
+Scores: 
+[('LearningAgent', 0.720981090817285), ('Primo', 0.6859722907645622)]
+Scores: 
+[('LearningAgent', 0.9984781122235433), ('Primo', 0.7552303420776146)]
+Scores: 
+[('LearningAgent', 1.069834681855019), ('Primo', 0.6804291650383036)]
+Scores: 
+[('LearningAgent', 0.8896032731419308), ('Primo', 0.7922248391324668)]
+Scores: 
+[('LearningAgent', 0.9435913333928676), ('Primo', 0.7724948683682278)]
+Scores: 
+[('LearningAgent', 1.0844238311745424), ('Primo', 0.7446286140578625)]
+Scores: 
+[('LearningAgent', 1.018370259812843), ('Primo', 0.7493823826167815)]
+Scores: 
+[('LearningAgent', 1.0041819265541116), ('Primo', 0.6840522847479578)]
+Scores: 
+[('LearningAgent', 1.2199584387143725), ('Primo', 0.6609276582825772)]
+Scores: 
+[('LearningAgent', 1.0827485591409087), ('Primo', 0.5854527775268625)]
+Scores: 
+[('LearningAgent', 0.9820264431437671), ('Primo', 0.4963653594663843)]
+Scores: 
+[('LearningAgent', 1.0271929530773272), ('Primo', 0.534305017545722)]
+Scores: 
+[('LearningAgent', 1.0767729183777162), ('Primo', 0.5135255761724923)]
+Scores: 
+[('LearningAgent', 0.9661782777065007), ('Primo', 0.6779322506383327)]
+Scores: 
+[('LearningAgent', 0.9396720869423003), ('Primo', 0.66416596831352)]
+Scores: 
+[('LearningAgent', 0.9565312027279655), ('Primo', 0.6203447510845986)]
+Scores: 
+[('LearningAgent', 0.6794283437383786), ('Primo', 0.676606608656347)]
+Scores: 
+[('LearningAgent', 0.9066107386864705), ('Primo', 0.6375484300927369)]
+Scores: 
+[('LearningAgent', 0.7104794466526656), ('Primo', 0.546052968418447)]
+Scores: 
+[('LearningAgent', 1.0924714195546148), ('Primo', 0.7624244712013329)]
+Scores: 
+[('LearningAgent', 0.9731538268524658), ('Primo', 0.6966035852890108)]
+Scores: 
+[('Primo', 0.7636787855398889), ('LearningAgent', 0.7505778133737394)]
+Scores: 
+[('LearningAgent', 0.8766686877927222), ('Primo', 0.6628836082637166)]
+Scores: 
+[('LearningAgent', 0.9714720940861844), ('Primo', 0.5658650097870223)]
+Scores: 
+[('LearningAgent', 1.0134056615823437), ('Primo', 0.7034812356999153)]
+Scores: 
+[('LearningAgent', 0.9971275739675377), ('Primo', 0.5677465365955094)]
+Scores: 
+[('LearningAgent', 1.1796799269970428), ('Primo', 0.7281157472313148)]
+Scores: 
+[('LearningAgent', 1.0054505157091427), ('Primo', 0.5722233660087326)]
+Scores: 
+[('LearningAgent', 0.7278136905219466), ('Primo', 0.6741654068420307)]
+Scores: 
+[('LearningAgent', 1.1998259261953148), ('Primo', 0.6903019258448029)]
+Scores: 
+[('LearningAgent', 0.8032548322592319), ('Primo', 0.7104480228635957)]
+Scores: 
+[('LearningAgent', 0.9143771701417244), ('Primo', 0.6050610156649224)]
+Scores: 
+[('LearningAgent', 0.9197997968928173), ('Primo', 0.7458136530138232)]
+Scores: 
+[('LearningAgent', 0.9713497192024612), ('Primo', 0.6805850755217495)]
+Scores: 
+[('LearningAgent', 0.9049047814651076), ('Primo', 0.6914398035407813)]
+Scores: 
+[('LearningAgent', 0.8552014107991673), ('Primo', 0.7277959118749125)]

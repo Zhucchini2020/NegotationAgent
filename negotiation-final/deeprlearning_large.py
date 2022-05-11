@@ -34,9 +34,9 @@ from os.path import exists
 
 warnings.simplefilter("ignore")
 
-learning_rate = 0.01
-propose_file_name = 'propose_network_qlearning.pt'
-respond_file_name = 'respond_network_qlearning.pt'
+learning_rate = 0.001
+propose_file_name = 'propose_network_qlearning_big4.pt'
+respond_file_name = 'respond_network_qlearning_big4.pt'
 finetune = True
 # TODO: Change the class name to something unique. This will be the name of your agent.
 
@@ -46,12 +46,16 @@ class ProposeNet(nn.Module):
 
         self.fc1 = nn.Linear(4, 16)
         self.fc2 = nn.Linear(16, 64)
-        self.fc3 = nn.Linear(64, 400) 
+        self.fc3 = nn.Linear(64, 64)
+        self.fc4 = nn.Linear(64, 64)
+        self.fc5 = nn.Linear(64, 1000) 
     
     def forward(self, x):
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
-        x = F.softmax(self.fc3(x))
+        x = F.relu(self.fc3(x))
+        x = F.relu(self.fc4(x))
+        x = F.softmax(self.fc5(x))
         return x
 
 class RespondNet(nn.Module):
@@ -60,12 +64,16 @@ class RespondNet(nn.Module):
 
         self.fc1 = nn.Linear(4, 16)
         self.fc2 = nn.Linear(16, 64)
-        self.fc3 = nn.Linear(64, 1) 
+        self.fc3 = nn.Linear(64, 64)
+        self.fc4 = nn.Linear(64, 256)
+        self.fc5 = nn.Linear(256, 1) 
     
     def forward(self, x):
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
-        x = F.sigmoid(self.fc3(x))
+        x = F.relu(self.fc3(x))
+        x = F.relu(self.fc4(x))
+        x = F.sigmoid(self.fc5(x))
         return x
 
 class Primo(OneShotAgent):
@@ -135,9 +143,9 @@ class Primo(OneShotAgent):
         offer = [-1] * 3
         input = torch.tensor([quantity, time, price, selling]).type(torch.FloatTensor)
         output = self.propose_model(input)
-        m = torch.distributions.Categorical(output)
-        a = m.sample().item()
-        offer[QUANTITY] = a % 40
+        probs = torch.distributions.Categorical(output)
+        a = probs.sample().item()
+        offer[QUANTITY] = a % 100
         offer[TIME] = self.awi.current_step
         offer[UNIT_PRICE] = a % 10
         offer = tuple(offer)
@@ -176,8 +184,8 @@ class Primo(OneShotAgent):
         th = self._th(state.step - (3*ami.n_steps//4), ami.n_steps - (3*ami.n_steps//4), 0.2)
         input = torch.tensor([opp_p, opp_q, int(selling), th]).type(torch.FloatTensor)
         output = self.respond_model(input)
-        m = torch.distributions.Bernoulli(output)
-        a = m.sample()
+        probs = torch.distributions.Bernoulli(output)
+        a = probs.sample()
         response = ResponseType.ACCEPT_OFFER if a == 1 else ResponseType.REJECT_OFFER
         util = self.ufun.from_offers(tuple([offer]), tuple([self._is_selling(ami)]))
         self.preds.append((input, a, util))
@@ -251,18 +259,21 @@ class Primo(OneShotAgent):
         self.propose_optimizer.zero_grad()
         self.respond_optimizer.zero_grad()
         avg_util = self.ufun.from_contracts(self.contracts)
+        max_util = torch.tensor(self.ufun.find_limit(True).utility)
         for state, action, reward in self.proposes:
-            reward -= avg_util
-            probs = self.propose_model(state)
-            m = torch.distributions.Categorical(probs)
-            loss = -m.log_prob(torch.autograd.Variable(torch.tensor(action))) * reward
+            #reward -= avg_util
+            output = self.propose_model(state)
+            probs = torch.distributions.Categorical(output)
+            mul = max_util - reward
+            loss = -probs.log_prob(torch.autograd.Variable(torch.tensor(action))) * mul
             loss.backward()
         self.propose_optimizer.step()
         for state, action, reward in self.preds:
-            reward -= avg_util
-            probs = self.respond_model(state)
-            m = torch.distributions.Bernoulli(probs)
-            loss = -m.log_prob(torch.autograd.Variable(torch.tensor(action))) * reward
+            #reward -= avg_util
+            output = self.respond_model(state)
+            probs = torch.distributions.Bernoulli(output)
+            mul = max_util - reward
+            loss = -probs.log_prob(torch.autograd.Variable(torch.tensor(action))) * mul
             loss.backward()
         self.respond_optimizer.step()
         if not finetune:
